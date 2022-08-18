@@ -2,6 +2,8 @@ package dieticianMenu;
 
 import addRecipeMenu.AddRecipeMenu;
 import mainMenu.MainMenu;
+import utils.PrintHandler;
+import utils.RecipePool;
 
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class DieticianMenuModel {
 
     public void handleOption(int selectedOption) throws IndexOutOfBoundsException {
         switch (selectedOption) {
-            case 1 -> System.out.println("Showing recipe list");
+            case 1 -> PrintHandler.optionList(RecipePool.getAllRecipes());
             case 2 -> new AddRecipeMenu();
             case 3 -> System.out.println("Edit a recipe");
             case 4 -> new MainMenu();

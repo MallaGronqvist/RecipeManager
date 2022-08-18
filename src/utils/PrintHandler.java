@@ -23,12 +23,12 @@ public class PrintHandler {
         System.out.println("[0] Back to main menu");
     }
 
-    public static void optionList(List<String> options) {
+    public static void optionList(List<?> options) {
         for (int index = 0; index < options.size(); index++) {
             int number = index + 1;
-            String label = options.get(index);
+       //     String label = options.get(index);
 
-            System.out.println("[" + number + "] " + label);
+            System.out.println("[" + number + "] " + options.get(index));
         }
     }
 
@@ -49,7 +49,7 @@ public class PrintHandler {
 
     public static void printRecipe(Recipe recipe){
         System.out.println("Title: " + recipe.getTitle());
-        System.out.println("Ingredients: " + recipe.getIngredients());
-        System.out.println("Steps: " + recipe.getSteps());
+        System.out.println("Ingredients: \n" + recipe.ingredientsToString());
+        System.out.println("Steps: \n" + recipe.stepsToString());
     }
 }

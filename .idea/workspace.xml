@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipeManager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainMenu/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userRoles/Dietician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/PrintHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Recipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/RecipeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/RecipePool.java" afterDir="false" />
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Created some menu classes and worked on add recipe -feature.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/PrintHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PrintHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipePool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660732332914</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created some menu classes and worked on add recipe -feature.">
+      <created>1660814743188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814743188</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,5 +95,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created some menu classes and worked on add recipe -feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created some menu classes and worked on add recipe -feature." />
   </component>
 </project>
