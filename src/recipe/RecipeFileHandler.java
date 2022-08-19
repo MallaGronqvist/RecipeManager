@@ -1,4 +1,4 @@
-package utils;
+package recipe;
 
 import java.io.*;
 import java.util.*;

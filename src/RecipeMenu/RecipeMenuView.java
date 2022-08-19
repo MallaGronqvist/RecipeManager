@@ -1,15 +1,16 @@
-package mainMenu;
+package RecipeMenu;
 
 import printers.PrintHandler;
+import recipe.Recipe;
 
 import java.util.List;
 
-public class MainMenuView {
-    public MainMenuView(List<String> menuOptions) {
+public class RecipeMenuView {
+
+    public RecipeMenuView(List<Recipe> recipes) {
         PrintHandler.clearConsole();
-        PrintHandler.appTitle();
-        System.out.println("Choose a user type:");
-        PrintHandler.optionList(menuOptions);
+        System.out.println("Available recipes:");
+        PrintHandler.optionList(recipes);
         requestUserInput();
     }
 

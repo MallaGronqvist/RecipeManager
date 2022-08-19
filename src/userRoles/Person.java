@@ -1,5 +1,6 @@
 package userRoles;
 
 public abstract class Person {
-    abstract void sessionLoop();
+    public abstract void printBanner();
+    public abstract void sessionLoop();
 }

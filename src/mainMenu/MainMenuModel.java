@@ -1,26 +1,29 @@
 package mainMenu;
 
-import dieticianMenu.DieticianMenu;
-import utils.Recipe;
-import utils.RecipeFileHandler;
-import utils.RecipePool;
+import userRoles.Dietitian;
+import userRoles.Person;
+import userRoles.User;
+import recipe.RecipePool;
 
 import java.util.List;
 
 public class MainMenuModel {
-    private final List<String> menuOptions = List.of("Log in as user", "Log in as dietician");
+    private final List<String> menuOptions = List.of("Log in as user", "Log in as dietitian");
 
-    private static RecipePool recipePool = new RecipePool();
+    private Person inloggedUser;
 
     public List<String> getMenuOptions() {
         return menuOptions;
     }
 
-    public void handleOption(int selectedOption) throws IndexOutOfBoundsException {
+    public void processOption(int selectedOption) throws IndexOutOfBoundsException {
         switch (selectedOption) {
-            case 1 -> System.out.println("Logged in as user.");
-            case 2 -> new DieticianMenu();
+            case 1 -> inloggedUser = new User();
+            case 2 -> inloggedUser = new Dietitian();
             default -> throw new IndexOutOfBoundsException();
         }
+
+        inloggedUser.printBanner();
+        inloggedUser.sessionLoop();
     }
 }

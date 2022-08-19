@@ -1,20 +1,19 @@
-package mainMenu;
+package userMenu;
 
 import java.util.Scanner;
 
-public class MainMenuController {
-    private final MainMenuView view;
-    private final MainMenuModel model;
-    private final Scanner scanner;
+public class UserMenuController {
+    private final UserMenuModel model;
+    private final UserMenuView view;
 
-    public MainMenuController(MainMenuModel model, MainMenuView view) {
+    public UserMenuController(UserMenuModel model, UserMenuView view) {
         this.model = model;
         this.view = view;
-        this.scanner = new Scanner(System.in);
     }
 
     public void readUserInput() {
-        String input = scanner.nextLine();
+        Scanner keyboard = new Scanner(System.in);
+        String input = keyboard.nextLine();
 
         try {
             int selectedOption = Integer.parseInt(input);

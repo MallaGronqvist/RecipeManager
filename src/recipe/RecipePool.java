@@ -1,4 +1,7 @@
-package utils;
+package recipe;
+
+import recipe.Recipe;
+import recipe.RecipeFileHandler;
 
 import java.util.Iterator;
 import java.util.List;
@@ -10,12 +13,12 @@ public class RecipePool {
         allRecipes = RecipeFileHandler.readFile();
     }
 
-    Iterator<Recipe> getIterator(){
-        return allRecipes.listIterator();
+    public static Recipe getRecipe(int selectedOption) {
+        return allRecipes.get(selectedOption-1);
     }
 
-    public void saveToFile(){
-
+    Iterator<Recipe> getIterator(){
+        return allRecipes.listIterator();
     }
 
     public static void addRecipe(Recipe recipe){

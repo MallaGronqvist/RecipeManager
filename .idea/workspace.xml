@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Further developed the add recipe -feature.">
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Worked on RecipeFileHandler for saving to and reading from file.">
+      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/MenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/printers/RecipePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PrintHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PrintHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipePool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/recipes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Dietician.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/PrintHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/PrintHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipePool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +66,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="addRecipeMenu" />
@@ -90,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660827552500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Worked on RecipeFileHandler for saving to and reading from file.">
+      <created>1660904285720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660904285720</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Worked on RecipeFileHandler for saving to and reading from file.">
+      <created>1660904319888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660904319888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created some menu classes and worked on add recipe -feature." />
     <MESSAGE value="Further developed the add recipe -feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Further developed the add recipe -feature." />
+    <MESSAGE value="Worked on RecipeFileHandler for saving to and reading from file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on RecipeFileHandler for saving to and reading from file." />
   </component>
 </project>

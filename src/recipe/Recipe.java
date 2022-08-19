@@ -1,13 +1,13 @@
-package utils;
+package recipe;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Recipe {
-    private String title;
-    List<String>ingredients;
+    List<String> ingredients;
     List<String> steps;
     int id;
+    private String title;
 
     public Recipe() {
         this.title = "No Name";
@@ -16,14 +16,14 @@ public class Recipe {
         this.id = 0;
     }
 
-    public Recipe(String[] recipeDetails){
+    public Recipe(String[] recipeDetails) {
         this.id = Integer.parseInt(recipeDetails[0]);
         this.title = recipeDetails[1];
         String ingredients = recipeDetails[2];
-        String [] parsedIngredients = ingredients.split(";");
+        String[] parsedIngredients = ingredients.split(";");
         setIngredients(List.of(parsedIngredients));
         String steps = recipeDetails[3];
-        String [] parsedSteps = steps.split(";");
+        String[] parsedSteps = steps.split(";");
         setSteps(List.of(parsedSteps));
     }
 
@@ -32,11 +32,11 @@ public class Recipe {
         return title;
     }
 
-    public  String ingredientsToString(){
-        String ingredientsString ="";
+    public String ingredientsToString() {
+        String ingredientsString = "";
 
-        for (String ingredient: ingredients) {
-            ingredientsString = ingredientsString + (new StringBuilder()).append(ingredient).append(";").toString();
+        for (String ingredient : ingredients) {
+            ingredientsString = ingredientsString + (new StringBuilder()).append(ingredient).append(";");
         }
         ingredientsString = ingredientsString.substring(0, ingredientsString.length() - 1);
         return ingredientsString;
@@ -46,13 +46,13 @@ public class Recipe {
         String stepsString = "";
 
         for (String step : steps) {
-            stepsString = stepsString + (new StringBuilder()).append(step).append(";").toString();
+            stepsString = stepsString + (new StringBuilder()).append(step).append(";");
         }
         stepsString = stepsString.substring(0, stepsString.length() - 1);
         return stepsString;
     }
 
-    public String printable(){
+    public String printable() {
         final String delimiter = ":";
         return id + delimiter + title + delimiter +
                 ingredientsToString() + delimiter +
@@ -71,12 +71,12 @@ public class Recipe {
         return steps;
     }
 
-    public void addStep(String step){
-        steps.add(step);
-    }
-
     public void setSteps(List<String> steps) {
         this.steps = steps;
+    }
+
+    public void addStep(String step) {
+        steps.add(step);
     }
 
     public int getId() {

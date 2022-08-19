@@ -1,12 +1,11 @@
-package dieticianMenu;
+package dietitianMenu;
 
-import utils.PrintHandler;
+import printers.PrintHandler;
 
 import java.util.List;
 
-public class DieticianMenuView {
-
-    public DieticianMenuView(List<String> menuOptions){
+public class DietitianMenuView {
+    public DietitianMenuView(List<String> menuOptions){
         PrintHandler.optionList(menuOptions);
         requestUserInput();
     }
@@ -16,6 +15,6 @@ public class DieticianMenuView {
     }
 
     public void requestUserInput() {
-        System.out.print("Choose an option and press enter: ");
+        System.out.print("Enter your choice and press enter: ");
     }
 }

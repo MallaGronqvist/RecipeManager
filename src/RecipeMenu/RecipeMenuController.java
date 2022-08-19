@@ -1,19 +1,18 @@
-package mainMenu;
+package RecipeMenu;
 
 import java.util.Scanner;
 
-public class MainMenuController {
-    private final MainMenuView view;
-    private final MainMenuModel model;
-    private final Scanner scanner;
+public class RecipeMenuController {
+    private final RecipeMenuModel model;
+    private final RecipeMenuView view;
 
-    public MainMenuController(MainMenuModel model, MainMenuView view) {
+    public RecipeMenuController(RecipeMenuModel model, RecipeMenuView view) {
         this.model = model;
         this.view = view;
-        this.scanner = new Scanner(System.in);
     }
 
     public void readUserInput() {
+        Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
         try {

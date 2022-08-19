@@ -1,12 +1,12 @@
-package dieticianMenu;
+package dietitianMenu;
 
 import java.util.Scanner;
 
-public class DieticianMenuController {
-    private final DieticianMenuModel model;
-    private final DieticianMenuView view;
+public class DietitianMenuController {
+    private final DietitianMenuModel model;
+    private final DietitianMenuView view;
 
-    public DieticianMenuController(DieticianMenuModel model, DieticianMenuView view) {
+    public DietitianMenuController(DietitianMenuModel model, DietitianMenuView view) {
         this.model = model;
         this.view = view;
     }
@@ -18,7 +18,7 @@ public class DieticianMenuController {
         try {
             int selectedOption = Integer.parseInt(input);
 
-            model.handleOption(selectedOption);
+            model.processOption(selectedOption);
         }
         catch (NumberFormatException | IndexOutOfBoundsException exception) {
             view.printInvalidOption();

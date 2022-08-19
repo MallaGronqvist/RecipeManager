@@ -1,8 +1,6 @@
-package addRecipeMenu;
+package addRecipe;
 
-import java.util.List;
-
-public class AddRecipeMenuModel {
+public class AddRecipeModel {
     private String instructions = "Add a Recipe by entering title, ingredients and steps";
 
     public String getInstructions() {

@@ -1,7 +1,6 @@
 import mainMenu.MainMenu;
-import utils.RecipePool;
+import recipe.RecipePool;
 
-import java.util.Scanner;
 
 public class Main {
 
