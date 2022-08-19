@@ -1,0 +1,3 @@
+0:munakas:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti
+0:brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour;0.2 kg flour:shake all ingredients;mix properly;let rest;bake
+0:tasty:1.0 pc carrot;1.0 pc tomato:peel;cut
