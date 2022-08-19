@@ -16,6 +16,17 @@ public class Recipe {
         this.id = 0;
     }
 
+    public Recipe(String[] recipeDetails){
+        this.id = Integer.parseInt(recipeDetails[0]);
+        this.title = recipeDetails[1];
+        String ingredients = recipeDetails[2];
+        String [] parsedIngredients = ingredients.split(";");
+        setIngredients(List.of(parsedIngredients));
+        String steps = recipeDetails[3];
+        String [] parsedSteps = steps.split(";");
+        setSteps(List.of(parsedSteps));
+    }
+
     @Override
     public String toString() {
         return title;
@@ -23,30 +34,29 @@ public class Recipe {
 
     public  String ingredientsToString(){
         String ingredientsString ="";
-        int index = 1;
 
         for (String ingredient: ingredients) {
-            ingredientsString = ingredientsString + (new StringBuilder()).append(index).append(". ").append(ingredient).append("\n").toString();
-            index++;
+            ingredientsString = ingredientsString + (new StringBuilder()).append(ingredient).append(";").toString();
         }
+        ingredientsString = ingredientsString.substring(0, ingredientsString.length() - 1);
         return ingredientsString;
     }
 
     public String stepsToString() {
         String stepsString = "";
-        int index = 1;
 
         for (String step : steps) {
-            stepsString = stepsString + (new StringBuilder()).append(index).append(". ").append(step).append("\n").toString();
-            index++;
+            stepsString = stepsString + (new StringBuilder()).append(step).append(";").toString();
         }
+        stepsString = stepsString.substring(0, stepsString.length() - 1);
         return stepsString;
     }
 
     public String printable(){
-        return "Recipe title:\n" + title + "\n\n" +
-                "Ingredients:\n" + ingredientsToString() +
-                "Steps:\n " + stepsToString() + "\n";
+        final String delimiter = ":";
+        return id + delimiter + title + delimiter +
+                ingredientsToString() + delimiter +
+                stepsToString() + "\n";
     }
 
     public List<String> getIngredients() {

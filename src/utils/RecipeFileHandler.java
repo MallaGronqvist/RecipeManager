@@ -1,12 +1,49 @@
 package utils;
 
+import java.io.*;
 import java.util.*;
 
 public class RecipeFileHandler {
 
-    public static List<Recipe> getRecipes(){
+
+    public static List<Recipe> readFile(){
         List<Recipe> recipes = new ArrayList<>();
 
+        try (FileReader fileReader = new FileReader("recipes.txt");
+             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+            String line;
+
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] parsedData = line.split(":");
+
+                for (String str: parsedData){
+                    System.out.println(str);
+                }
+                Recipe recipe = new Recipe(parsedData);
+                recipes.add(recipe);
+            }
+        } catch (IOException e) {
+            System.out.println("Recipes could not be loaded from file.");
+            System.exit(0);
+        }
+
         return recipes;
+    }
+
+    public static void saveToFile(RecipePool recipePool){
+        Iterator<Recipe>iterator = recipePool.getIterator();
+
+        File file = new File("recipes.txt");
+        try {
+            Writer output = new BufferedWriter(new FileWriter(file));
+
+            while(iterator.hasNext()) {
+                Recipe recipe = iterator.next();
+                output.write(recipe.printable());
+            }
+            output.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

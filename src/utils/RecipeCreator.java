@@ -3,7 +3,7 @@ package utils;
 import java.util.List;
 import java.util.Scanner;
 
-public class RecipeHandler {
+public class RecipeCreator {
 
     public static void enterRecipe(Recipe recipe){
         addTitle(recipe);
@@ -14,34 +14,26 @@ public class RecipeHandler {
     }
 
     public static void addTitle(Recipe recipe){
-        String title = requestTextInput("Enter recipe title and press enter:");
-
-        recipe.setTitle(title);
+        recipe.setTitle(requestTextInput("Enter recipe title and press enter:"));
     }
 
     public static void addSteps(Recipe recipe){
-            String step = requestTextInput("Enter a step and press enter or enter 'q' for no more steps:");
-
-            if(step.equalsIgnoreCase("q")){
-                return;
-            }
+            String step = requestTextInput("Enter a step and press enter:");
 
             recipe.addStep(step);
 
             PrintHandler.printRecipe(recipe);
 
-            addSteps(recipe);
+            if(moreInput()){
+                addSteps(recipe);
+            }
     }
 
     public static void addIngredients(Recipe recipe){
-        String ingredient = requestTextInput("Enter an ingredient and press enter or enter q for no more ingredients:");
-
-        if(ingredient.equalsIgnoreCase("q")){
-            return;
-        }
+        String ingredient = requestTextInput("Enter an ingredient and press enter: ");
 
         String measurement = "";
-        int quantity = 0;
+        double quantity = 0;
 
         try {
             measurement = requestMeasurementType();
@@ -56,7 +48,9 @@ public class RecipeHandler {
 
         PrintHandler.printRecipe(recipe);
 
-        addIngredients(recipe);
+        if(moreInput()){
+            addIngredients(recipe);
+        }
     }
 
     private static String requestMeasurementType() throws IndexOutOfBoundsException, NumberFormatException{
@@ -80,8 +74,8 @@ public class RecipeHandler {
         return  chosenMeasurement;
     }
 
-    private static int requestQuantity() throws NumberFormatException{
-        int quantity = Integer.parseInt(requestTextInput("Enter quantity: "));
+    private static double requestQuantity() throws NumberFormatException{
+        double quantity = Double.parseDouble(requestTextInput("Enter quantity: "));
         if(quantity <= 0 ){
             System.out.println("Invalid quantity. Try again.");
             requestQuantity();
@@ -112,4 +106,16 @@ public class RecipeHandler {
         return input;
     }
 
+    private static boolean moreInput(){
+        String answer= requestTextInput("Add more? Type 'Y' for yes or 'N' for no.");
+
+        if(answer.equalsIgnoreCase("y")) {
+            return true;
+        } else if (answer.equalsIgnoreCase("n")) {
+            return false;
+        } else {
+            System.out.println("Invalid input. Try again");
+            return moreInput();
+        }
+    }
 }

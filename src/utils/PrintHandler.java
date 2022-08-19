@@ -49,7 +49,9 @@ public class PrintHandler {
 
     public static void printRecipe(Recipe recipe){
         System.out.println("Title: " + recipe.getTitle());
-        System.out.println("Ingredients: \n" + recipe.ingredientsToString());
-        System.out.println("Steps: \n" + recipe.stepsToString());
+        System.out.println("Ingredients: \n");
+        PrintHandler.optionList(recipe.getIngredients());
+        System.out.println("Steps: \n");
+        PrintHandler.optionList(recipe.getSteps());
     }
 }

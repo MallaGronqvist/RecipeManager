@@ -3,6 +3,7 @@ package dieticianMenu;
 import addRecipeMenu.AddRecipeMenu;
 import mainMenu.MainMenu;
 import utils.PrintHandler;
+import utils.RecipeFileHandler;
 import utils.RecipePool;
 
 import java.util.List;
@@ -19,7 +20,10 @@ public class DieticianMenuModel {
             case 1 -> PrintHandler.optionList(RecipePool.getAllRecipes());
             case 2 -> new AddRecipeMenu();
             case 3 -> System.out.println("Edit a recipe");
-            case 4 -> new MainMenu();
+            case 4 -> {
+                new MainMenu();
+                RecipeFileHandler.saveToFile(new RecipePool());
+            }
             default -> throw new IndexOutOfBoundsException();
         }
     }

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Created some menu classes and worked on add recipe -feature.">
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Further developed the add recipe -feature.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/PrintHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PrintHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/RecipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipeCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/RecipePool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660814743188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Further developed the add recipe -feature.">
+      <created>1660827552500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660827552500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created some menu classes and worked on add recipe -feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created some menu classes and worked on add recipe -feature." />
+    <MESSAGE value="Further developed the add recipe -feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Further developed the add recipe -feature." />
   </component>
 </project>
