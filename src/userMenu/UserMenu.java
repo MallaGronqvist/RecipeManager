@@ -1,4 +1,5 @@
 package userMenu;
+import menus.MenuController;
 import userRoles.User;
 
 public class UserMenu {
@@ -6,7 +7,7 @@ public class UserMenu {
     public UserMenu(User user) {
         UserMenuModel model = new UserMenuModel(user);
         UserMenuView view = new UserMenuView(model.getMenuOptions());
-        UserMenuController controller = new UserMenuController(model, view);
+        MenuController controller = new MenuController(model, view);
 
         controller.readUserInput();
     }

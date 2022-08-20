@@ -4,41 +4,34 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Worked on RecipeFileHandler for saving to and reading from file.">
-      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menus/MenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printers/RecipePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userMenu/UserMenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Worked on view recipe list -feature and added a user menu.">
+      <change afterPath="$PROJECT_DIR$/src/menus/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/MenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/recipes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addRecipeMenu/AddRecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/addRecipe/AddRecipeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dieticianMenu/DieticianMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipe/AddRecipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipe/AddRecipeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipe/AddRecipeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addRecipe/AddRecipeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainMenu/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainMenu/MainMenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userRoles/Dietician.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/MenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printers/RecipePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/RecipePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userMenu/UserMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userMenu/UserMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userMenu/UserMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userRoles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PrintHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/PrintHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipeFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeFileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipePool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -134,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660904319888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Worked on view recipe list -feature and added a user menu.">
+      <created>1660920151882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660920151882</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +153,7 @@
     <MESSAGE value="Created some menu classes and worked on add recipe -feature." />
     <MESSAGE value="Further developed the add recipe -feature." />
     <MESSAGE value="Worked on RecipeFileHandler for saving to and reading from file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on RecipeFileHandler for saving to and reading from file." />
+    <MESSAGE value="Worked on view recipe list -feature and added a user menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on view recipe list -feature and added a user menu." />
   </component>
 </project>

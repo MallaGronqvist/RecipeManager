@@ -2,6 +2,8 @@ package printers;
 
 import recipe.Recipe;
 
+import java.util.Scanner;
+
 public class RecipePrinter {
     public static void printRecipe(Recipe recipe){
         PrintHandler.clearConsole();
@@ -12,5 +14,14 @@ public class RecipePrinter {
         System.out.println();
         System.out.println("Steps: \n");
         PrintHandler.optionList(recipe.getSteps());
+    }
+
+    public static void waitForEnter() {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println();
+        System.out.println("Press enter to continue...");
+
+        keyboard.nextLine();
     }
 }

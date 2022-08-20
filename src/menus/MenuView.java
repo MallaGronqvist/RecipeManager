@@ -1,6 +1,6 @@
 package menus;
 
-public class MenuView {
+public abstract class MenuView {
     public void printInvalidOption() {
         System.out.println("Invalid option");
     }

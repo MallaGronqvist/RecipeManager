@@ -1,12 +1,15 @@
-package dietitianMenu;
+package menus;
+
+import dietitianMenu.DietitianMenuModel;
+import dietitianMenu.DietitianMenuView;
 
 import java.util.Scanner;
 
-public class DietitianMenuController {
-    private final DietitianMenuModel model;
-    private final DietitianMenuView view;
+public class MenuController {
+    private final MenuModel model;
+    private final MenuView view;
 
-    public DietitianMenuController(DietitianMenuModel model, DietitianMenuView view) {
+    public MenuController(MenuModel model, MenuView view) {
         this.model = model;
         this.view = view;
     }

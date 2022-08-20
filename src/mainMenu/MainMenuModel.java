@@ -1,5 +1,6 @@
 package mainMenu;
 
+import menus.MenuModel;
 import userRoles.Dietitian;
 import userRoles.Person;
 import userRoles.User;
@@ -7,7 +8,7 @@ import recipe.RecipePool;
 
 import java.util.List;
 
-public class MainMenuModel {
+public class MainMenuModel implements MenuModel {
     private final List<String> menuOptions = List.of("Log in as user", "Log in as dietitian");
 
     private Person inloggedUser;

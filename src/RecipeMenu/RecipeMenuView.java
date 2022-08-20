@@ -1,24 +1,17 @@
 package RecipeMenu;
 
+import menus.MenuView;
 import printers.PrintHandler;
 import recipe.Recipe;
 
 import java.util.List;
 
-public class RecipeMenuView {
+public class RecipeMenuView extends MenuView {
 
-    public RecipeMenuView(List<Recipe> recipes) {
+    public RecipeMenuView(List<String> recipes) {
         PrintHandler.clearConsole();
         System.out.println("Available recipes:");
         PrintHandler.optionList(recipes);
-        requestUserInput();
-    }
-
-    public void printInvalidOption() {
-        System.out.println("Invalid option");
-    }
-
-    public void requestUserInput() {
-        System.out.print("Enter your choice and press enter: ");
+        super.requestUserInput();
     }
 }

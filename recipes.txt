@@ -3,3 +3,4 @@
 0:tasty:1.0 pc carrot;1.0 pc tomato:peel;cut
 0:Soppa:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add brooth and vegetables and let boil for 10 minutes
 0:test recipy:1.0 pc test ingredient;5.0 kg another one:step 1;step 2
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.

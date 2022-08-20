@@ -1,5 +1,6 @@
 package recipe;
 
+import dietitianMenu.DietitianMenu;
 import printers.PrintHandler;
 import printers.RecipePrinter;
 
@@ -8,12 +9,15 @@ import java.util.Scanner;
 
 public class RecipeCreator {
 
-    public static void enterRecipe(Recipe recipe) {
+    public static void enterRecipe() {
+        Recipe recipe = new Recipe();
         addTitle(recipe);
         RecipePrinter.printRecipe(recipe);
         addIngredients(recipe);
         RecipePrinter.printRecipe(recipe);
         addSteps(recipe);
+        RecipePool.addRecipe(recipe);
+        new DietitianMenu();
     }
 
     public static void addTitle(Recipe recipe) {
