@@ -23,19 +23,14 @@ public class UserMenuModel implements MenuModel {
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
         switch (selectedOption) {
-            case 1 -> {
-                user.viewRecipePool();  // Change back to  new RecipeMenu() ?
-                new UserMenu(user);
-            }
+            case 1 -> new RecipeMenu();
             case 2 -> System.out.println("Generate");
             case 3 -> System.out.println("list of weeks");
-            case 4 -> System.out.println("view recipe");
-            case 5 -> {
-                System.out.println("log out");
-                new MainMenu();
-            }
+            case 4 -> user.viewRecipe();
+            case 5 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
         }
+        new UserMenu(user);
     }
 
 }

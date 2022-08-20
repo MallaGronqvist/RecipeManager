@@ -1,8 +1,5 @@
 package recipe;
 
-import recipe.Recipe;
-import recipe.RecipeFileHandler;
-
 import java.util.Iterator;
 import java.util.List;
 

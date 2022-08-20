@@ -5,7 +5,8 @@ import dietitianMenu.DietitianMenu;
 public class Dietitian extends Person {
     @Override
     public void printBanner() {
-        System.out.println("Inlogged as dietitian.");
+        System.out.println("Logged in as dietitian.");
+        System.out.println();
     }
 
     @Override

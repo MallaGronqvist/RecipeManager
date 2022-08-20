@@ -16,10 +16,8 @@ public class RecipeFileHandler {
             while ((line = bufferedReader.readLine()) != null) {
                 String[] parsedData = line.split(":");
 
-                for (String str: parsedData){
-                    System.out.println(str);
-                }
                 Recipe recipe = new Recipe(parsedData);
+
                 recipes.add(recipe);
             }
         } catch (IOException e) {
@@ -34,16 +32,16 @@ public class RecipeFileHandler {
         Iterator<Recipe>iterator = recipePool.getIterator();
 
         File file = new File("recipes.txt");
-        try {
-            Writer output = new BufferedWriter(new FileWriter(file));
+        try (Writer output = new BufferedWriter(new FileWriter(file))){
 
             while(iterator.hasNext()) {
                 Recipe recipe = iterator.next();
+
                 output.write(recipe.printable());
             }
-            output.close();
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Couldn't save recipes to file 'recipes.txt'");
         }
     }
 }

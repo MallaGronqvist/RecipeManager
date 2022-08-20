@@ -1,8 +1,6 @@
 package mainMenu;
 
 import menus.MenuController;
-import userRoles.User;
-import java.util.List;
 
 public class MainMenu {
 

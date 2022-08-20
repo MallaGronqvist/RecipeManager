@@ -1,3 +1,5 @@
+// Move some of the helper methods to another class.
+
 package recipe;
 
 import dietitianMenu.DietitianMenu;
@@ -39,58 +41,60 @@ public class RecipeCreator {
     public static void addIngredients(Recipe recipe) {
         String ingredient = requestTextInput("Enter an ingredient and press enter: ");
 
-        String measurement = "";
-        double quantity = 0;
+        String measurement = requestMeasurementType();
 
-        try {
-            measurement = requestMeasurementType();
-            quantity = requestQuantity();
-        } catch (NumberFormatException | IndexOutOfBoundsException e) {
-            System.out.println("Invalid option. Try again.");
-            addIngredients(recipe);
-        }
+        double quantity = requestQuantity();
 
         ingredient = quantity + " " + measurement + " " + ingredient;
+
         recipe.addIngredient(ingredient);
 
         RecipePrinter.printRecipe(recipe);
 
-        if (moreInput()) {
-            addIngredients(recipe);
-        }
+        if (moreInput()) { addIngredients(recipe);}
     }
 
-    private static String requestMeasurementType() throws IndexOutOfBoundsException, NumberFormatException {
-        System.out.println("Measurements:");
+    private static String requestMeasurementType() {
         List<String> measurements = List.of("Quantity (pc)", "Liters (l)", "Kilograms (kg)");
         PrintHandler.optionList(measurements);
-        int input = Integer.parseInt(requestTextInput("Choose a measurement: "));
 
         String chosenMeasurement = "";
 
-        switch (input) {
-            case 1:
-                chosenMeasurement = "pc";
-                break;
-            case 2:
-                chosenMeasurement = "l";
-                break;
-            case 3:
-                chosenMeasurement = "kg";
-                break;
-            default:
-                throw new IndexOutOfBoundsException();
+        try {
+            int input = Integer.parseInt(requestTextInput("Choose a measurement: "));
+
+            switch (input) {
+                case 1: chosenMeasurement = "pc";
+                    break;
+                case 2: chosenMeasurement = "l";
+                    break;
+                case 3: chosenMeasurement = "kg";
+                    break;
+                default:
+                    throw new IndexOutOfBoundsException();
+            }
+        } catch (IndexOutOfBoundsException | NumberFormatException e) {
+            System.out.println("Invalid option. Try again.");
+            requestMeasurementType();
         }
 
         return chosenMeasurement;
     }
 
-    private static double requestQuantity() throws NumberFormatException {
-        double quantity = Double.parseDouble(requestTextInput("Enter quantity: "));
-        if (quantity <= 0) {
-            System.out.println("Invalid quantity. Try again.");
+    private static double requestQuantity() {
+        double quantity = 0;
+
+        try {
+            quantity = Double.parseDouble(requestTextInput("Enter quantity: "));
+
+            if (quantity <= 0) { throw new NumberFormatException();}
+
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Try again.");
+
             requestQuantity();
         }
+
         return quantity;
     }
 
@@ -99,21 +103,26 @@ public class RecipeCreator {
             System.out.println("Your input starts with a space. This is not allowed. Try again.");
             return true;
         }
+
         return false;
     }
 
     private static String requestTextInput(String request) {
         System.out.println(request);
-        String input = readInUserInput();
+
+        String input = readUserInput();
+
         if (startsWithSpace(input)) {
             requestTextInput(request);
         }
+
         return input;
     }
 
-    private static String readInUserInput() {
+    private static String readUserInput() {
         Scanner keyboard = new Scanner(System.in);
         String input = keyboard.nextLine();
+
         return input;
     }
 
@@ -126,6 +135,7 @@ public class RecipeCreator {
             return false;
         } else {
             System.out.println("Invalid input. Try again");
+
             return moreInput();
         }
     }
