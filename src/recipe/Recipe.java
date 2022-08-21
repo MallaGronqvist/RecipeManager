@@ -8,12 +8,14 @@ public class Recipe {
     List<String> steps;
     int id;
     private String title;
+    private int weight;
 
     public Recipe() {
         this.title = "No Name";
         this.ingredients = new ArrayList<>();
         this.steps = new ArrayList<>();
         this.id = 0;
+        this.weight = 1;
     }
 
     public Recipe(String[] recipeDetails) {
@@ -25,6 +27,7 @@ public class Recipe {
         String steps = recipeDetails[3];
         String[] parsedSteps = steps.split(";");
         setSteps(List.of(parsedSteps));
+        this.weight = 1;
     }
 
     @Override
@@ -98,4 +101,11 @@ public class Recipe {
     public void addIngredient(String ingredient) {
         ingredients.add(ingredient);
     }
+
+    public int getWeight() {
+        return weight;
+    }
+     public void setWeight(int weight){
+        this.weight = weight;
+     }
 }

@@ -14,6 +14,8 @@ public class RecipePrinter {
         System.out.println();
         System.out.println("Steps: \n");
         PrintHandler.optionList(recipe.getSteps());
+
+        waitForEnter();
     }
 
     public static void waitForEnter() {

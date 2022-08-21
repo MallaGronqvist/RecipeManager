@@ -4,11 +4,17 @@ import recipe.Recipe;
 import recipe.RecipeWeek;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Map;
 
 public class RecipeWeekPrinter {
 
-    public static void printWeek(Map<LocalDate, Recipe> recipeMap){
+    public static void printWeek(RecipeWeek recipeWeek){
+
+        System.out.println("Week " + recipeWeek.getWeekId() + " Meal Plan:");
+
+        Map<LocalDate, Recipe> recipeMap = recipeWeek.getDayRecipeMapping();
+
         for (LocalDate date:
                 recipeMap.keySet()) {
             System.out.println("date from recipeweek:");
@@ -16,9 +22,5 @@ public class RecipeWeekPrinter {
             System.out.println(recipeMap.get(date));
         }
 
-        System.out.println("Today's recipe:");
-        LocalDate today = LocalDate.now();
-
-        RecipePrinter.printRecipe(recipeMap.get(today));
     }
 }
