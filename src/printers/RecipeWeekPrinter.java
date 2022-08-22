@@ -4,15 +4,13 @@ import recipe.Recipe;
 import recipe.RecipeWeek;
 
 import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Map;
 
 public class RecipeWeekPrinter {
 
     public static void printWeek(RecipeWeek recipeWeek){
 
-        System.out.println("Week " + recipeWeek.getWeekId() + " Meal Plan:");
+        System.out.println("Week " + recipeWeek.getWeekNumber() + " Meal Plan:");
 
         Map<DayOfWeek, Recipe> recipeMap = recipeWeek.getDayRecipeMapping();
 

@@ -14,15 +14,13 @@ public class RecipePrinter {
         System.out.println();
         System.out.println("Steps: \n");
         PrintHandler.optionList(recipe.getSteps());
-
-        waitForEnter();
     }
 
     public static void waitForEnter() {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println();
-        System.out.println("Press enter to continue...");
+        System.out.println("Press enter to go back...");
 
         keyboard.nextLine();
     }

@@ -27,7 +27,7 @@ public class Recipe {
         String steps = recipeDetails[3];
         String[] parsedSteps = steps.split(";");
         setSteps(List.of(parsedSteps));
-        this.weight = 1;
+        this.weight = Integer.parseInt(recipeDetails[4]);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class Recipe {
         final String delimiter = ":";
         return id + delimiter + title + delimiter +
                 ingredientsToString() + delimiter +
-                stepsToString() + "\n";
+                stepsToString() + delimiter + weight + "\n";
     }
 
     public List<String> getIngredients() {

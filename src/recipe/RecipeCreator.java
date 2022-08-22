@@ -11,14 +11,14 @@ import java.util.Scanner;
 
 public class RecipeCreator {
 
-    public static void enterRecipe() {
+    public static Recipe enterRecipe() {
         Recipe recipe = new Recipe();
         addTitle(recipe);
         RecipePrinter.printRecipe(recipe);
         addIngredients(recipe);
         RecipePrinter.printRecipe(recipe);
         addSteps(recipe);
-        RecipePool.addRecipe(recipe);
+        return recipe;
     }
 
     public static void addTitle(Recipe recipe) {

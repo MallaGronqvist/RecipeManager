@@ -4,21 +4,18 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Worked on the 'generate recipe week' feature.">
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Changed LocalDate to DayOfWeek in RecipeWeek and RecipeWeekGenerator. Did some other minor adjustments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/recipes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printers/RecipePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/RecipePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/printers/RecipeWeekPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/RecipeWeekPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipePool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/RecipeWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeWeek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/RecipeWeekGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeWeekGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/Dietitian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
@@ -155,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661092802732</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed LocalDate to DayOfWeek in RecipeWeek and RecipeWeekGenerator. Did some other minor adjustments.">
+      <created>1661154914352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661154914352</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +182,10 @@
     <MESSAGE value="Did some refactoring." />
     <MESSAGE value="started to work on the 'generate recipe week' feature." />
     <MESSAGE value="Worked on the 'generate recipe week' feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on the 'generate recipe week' feature." />
+    <MESSAGE value="Changed LocalDate to DayOfWeek in RecipeWeek and RecipeWeekGenerator. Did some other minor adjustments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed LocalDate to DayOfWeek in RecipeWeek and RecipeWeekGenerator. Did some other minor adjustments." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RecipeManager$Main.ic" NAME="Main Coverage Results" MODIFIED="1661155342408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

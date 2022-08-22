@@ -4,13 +4,13 @@ import java.util.Iterator;
 import java.util.List;
 
 public class RecipePool {
-    private static List<Recipe> allRecipes;
+    private List<Recipe> allRecipes;
 
     public RecipePool(){
         allRecipes = RecipeFileHandler.readFile();
     }
 
-    public static Recipe getRecipe(int selectedOption) {
+    public Recipe getRecipe(int selectedOption) {
         return allRecipes.get(selectedOption-1);
     }
 
@@ -18,11 +18,18 @@ public class RecipePool {
         return allRecipes.listIterator();
     }
 
-    public static void addRecipe(Recipe recipe){
+    public void addRecipe(Recipe recipe){
+
+        System.out.println("Now adding the recipe");
         allRecipes.add(recipe);
+
+        for (Recipe recipeX: allRecipes) {
+            System.out.println(recipeX);
+
+        }
     }
 
-    public static List<Recipe> getAllRecipes() {
+    public List<Recipe> getAllRecipes() {
         return allRecipes;
     }
 }

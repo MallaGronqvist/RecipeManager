@@ -37,13 +37,13 @@ public class RecipeWeekGenerator {
 
         RecipeWeek recipeWeek = new RecipeWeek(pickedRecipes);
 
-        recipeWeek.setWeekId(generateWeekNumber());
+        recipeWeek.setWeekNumber(generateWeekNumber());
 
         return recipeWeek;
     }
 
     public static int generateWeekNumber(){
-        java.time.LocalDate today = LocalDate.now();
+        LocalDate today = LocalDate.now();
 
         int weekOfYear = today.get(WeekFields.of(Locale.GERMANY).weekOfYear());
 

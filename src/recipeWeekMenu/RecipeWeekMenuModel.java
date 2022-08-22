@@ -1,11 +1,14 @@
 package recipeWeekMenu;
 
+import menus.MenuModel;
 import printers.RecipePrinter;
 import recipe.Recipe;
 import recipe.RecipeWeek;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.temporal.WeekFields;
+import java.util.Locale;
 
 public class RecipeWeekMenuModel {
 
@@ -33,5 +36,13 @@ public class RecipeWeekMenuModel {
 
     public RecipeWeek getRecipeWeek() {
         return recipeWeek;
+    }
+    
+    public boolean isCurrentRecipeWeek(){
+        LocalDate today = LocalDate.now();
+
+        int currentWeekOfYear = today.get(WeekFields.of(Locale.GERMANY).weekOfYear());
+        
+        return recipeWeek.getWeekNumber() == currentWeekOfYear;
     }
 }

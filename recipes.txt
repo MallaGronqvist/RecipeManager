@@ -1,9 +1,13 @@
-0:test recipy:1.0 pc test ingredient;5.0 kg another one:step 1;step 2
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.
-0:brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour;0.2 kg flour:shake all ingredients;mix properly;let rest;bake
-0:munakas:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti
-0:Soppa:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add brooth and vegetables and let boil for 10 minutes
-0:tasty:1.0 pc carrot;1.0 pc tomato:peel;cut
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.
+0:Soppa:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add brooth and vegetables and let boil for 10 minutes:1
+0:tasty:1.0 pc carrot;1.0 pc tomato:peel;cut:1
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:21
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:60
+0:brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour;0.2 kg flour:shake all ingredients;mix properly;let rest;bake:70
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:3
+0:test recipy:1.0 pc test ingredient;5.0 kg another one:step 1;step 2:31
+0:munakas:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti:1
+0:please:1.0 pc c:s:1
+0:risotto:0.4 kg rice;0.1 l parmiggiano:boil;mix:1
+0:ff:1.0 pc ss:ddd:1
+0:vietnamese noodles:0.4 kg fff:boil:1

@@ -1,17 +1,12 @@
 package dietitianMenu;
 
-import RecipeMenu.RecipeMenu;
-import mainMenu.MainMenu;
 import menus.MenuModel;
-import recipe.RecipeCreator;
-import recipe.RecipeFileHandler;
-import recipe.RecipePool;
 import userRoles.Dietitian;
 
 import java.util.List;
 
 public class DietitianMenuModel implements MenuModel {
-    private final List<String> menuOptions = List.of("List recipes", "Add a recipe", "Edit a recipe", "Log out");
+    private final List<String> menuOptions = List.of("List recipes", "Add a recipe", "Edit a recipe", "View recipe", "Log out");
     Dietitian dietitian;
 
     public DietitianMenuModel(Dietitian dietitian) {
@@ -23,7 +18,7 @@ public class DietitianMenuModel implements MenuModel {
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
-        Dietitian dietitian = new Dietitian();
+
         switch (selectedOption) {
             case 1 -> dietitian.viewRecipeList();
             case 2 -> dietitian.createRecipe();

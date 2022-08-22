@@ -35,6 +35,6 @@ public class RecipeMenuModel implements MenuModel {
     }
 
     public List<Recipe> getRecipes() {
-       return RecipePool.getAllRecipes();
+       return recipePool.getAllRecipes();
     }
 }
