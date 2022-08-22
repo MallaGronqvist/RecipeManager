@@ -28,9 +28,7 @@ public class RecipeWeekMenuModel {
             case "7" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SUNDAY);
         }
 
-        RecipePrinter.printRecipe(requestedRecipe
-
-        );
+        RecipePrinter.printRecipe(requestedRecipe);
     }
 
     public RecipeWeek getRecipeWeek() {

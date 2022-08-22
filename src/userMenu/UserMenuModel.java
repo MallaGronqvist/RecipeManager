@@ -3,6 +3,7 @@ package userMenu;
 import RecipeMenu.RecipeMenu;
 import mainMenu.MainMenu;
 import menus.MenuModel;
+import recipe.RecipeFileHandler;
 import userRoles.User;
 
 import java.util.List;
@@ -23,14 +24,16 @@ public class UserMenuModel implements MenuModel {
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
         switch (selectedOption) {
-            case 1 -> new RecipeMenu();
+            case 1 -> user.viewRecipeList();
             case 2 -> user.generateWeek();
             case 3 -> System.out.println("list of weeks");
             case 4 -> user.viewRecipe();
-            case 5 -> new MainMenu();
+            case 5 -> user.signOut();
             default -> throw new IndexOutOfBoundsException();
         }
         new UserMenu(user);
     }
+
+
 
 }

@@ -3,6 +3,7 @@ package printers;
 import recipe.Recipe;
 import recipe.RecipeWeek;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Map;
@@ -13,13 +14,13 @@ public class RecipeWeekPrinter {
 
         System.out.println("Week " + recipeWeek.getWeekId() + " Meal Plan:");
 
-        Map<LocalDate, Recipe> recipeMap = recipeWeek.getDayRecipeMapping();
+        Map<DayOfWeek, Recipe> recipeMap = recipeWeek.getDayRecipeMapping();
 
-        for (LocalDate date:
+        for (DayOfWeek day:
                 recipeMap.keySet()) {
-            System.out.println("date from recipeweek:");
-            System.out.println(date.getDayOfWeek());
-            System.out.println(recipeMap.get(date));
+            System.out.println("Day from recipe week:");
+            System.out.println(day);
+            System.out.println(recipeMap.get(day));
         }
 
     }

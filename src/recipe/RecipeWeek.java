@@ -3,21 +3,23 @@ package recipe;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class RecipeWeek {
-    Map<LocalDate, Recipe> dayRecipeMapping = new LinkedHashMap<>();
+    Map<DayOfWeek, Recipe> dayRecipeMapping = new LinkedHashMap<>();
     int weekId;
 
-    public RecipeWeek(List<LocalDate> dates, List<Recipe> recipes){
+    public RecipeWeek(List<Recipe> recipes){
         int index = 0;
 
-        for (LocalDate date: dates) {
-            dayRecipeMapping.put(date, recipes.get(index));
+        for (DayOfWeek day: DayOfWeek.values()) {
+            dayRecipeMapping.put(day, recipes.get(index));
             index++;
         }
     }
 
-    public Map<LocalDate, Recipe> getDayRecipeMapping() {
+    public Map<DayOfWeek, Recipe> getDayRecipeMapping() {
         return dayRecipeMapping;
     }
 
@@ -29,15 +31,18 @@ public class RecipeWeek {
         return weekId;
     }
 
-    public Recipe getRecipeByDay(DayOfWeek day){
-        Recipe recipe = new Recipe();
+    public Recipe getRecipeByDay(DayOfWeek requestedDay){
+     /*   Recipe recipe = new Recipe();
 
-        for (LocalDate date: dayRecipeMapping.keySet()) {   // Change to stream?
-            if(date.getDayOfWeek() == day){
-                recipe = dayRecipeMapping.get(date);
+        for (DayOfWeek day: dayRecipeMapping.keySet()) {   // Change to stream?
+            if(day == requestedDay){
+                recipe = dayRecipeMapping.get(day);
             }
         }
         return recipe;
+
+      */
+        return dayRecipeMapping.get(requestedDay);
     }
 
     public Recipe getRecipeByDate(LocalDate date){

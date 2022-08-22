@@ -108,4 +108,8 @@ public class Recipe {
      public void setWeight(int weight){
         this.weight = weight;
      }
+
+    public void addWeight() {
+        this.weight += 1;
+    }
 }

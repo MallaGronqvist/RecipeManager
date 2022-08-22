@@ -1,5 +1,6 @@
 package userRoles;
 
+import RecipeMenu.RecipeMenu;
 import printers.RecipeWeekPrinter;
 import recipe.Recipe;
 import recipe.RecipePool;
@@ -16,11 +17,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class User extends Person {
-    RecipePool recipePool;
+
     List<RecipeWeek>usersRecipeWeeks;
 
     public User() {
-        this.recipePool = new RecipePool();
         usersRecipeWeeks = new ArrayList<>();
     }
 
@@ -35,14 +35,22 @@ public class User extends Person {
         new UserMenu(this);
     }
 
-    public void generateWeek(){
+    public RecipePool getRecipePool() {
+        return recipePool;
+    }
 
-        LocalDate testitoday = LocalDate.now();
+    public void generateWeek(){
 
         RecipeWeek recipeWeek = RecipeWeekGenerator.generateWeek(recipePool);
 
         usersRecipeWeeks.add(recipeWeek);
 
         new RecipeWeekMenu(recipeWeek);
+    }
+
+    public void viewRecipeList(){
+        new RecipeMenu(recipePool);
+
+        new UserMenu(this);
     }
 }

@@ -19,7 +19,6 @@ public class RecipeCreator {
         RecipePrinter.printRecipe(recipe);
         addSteps(recipe);
         RecipePool.addRecipe(recipe);
-        new DietitianMenu();
     }
 
     public static void addTitle(Recipe recipe) {

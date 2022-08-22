@@ -6,7 +6,7 @@ import java.util.List;
 public class RecipePool {
     private static List<Recipe> allRecipes;
 
-    public static void loadFromFile(){
+    public RecipePool(){
         allRecipes = RecipeFileHandler.readFile();
     }
 

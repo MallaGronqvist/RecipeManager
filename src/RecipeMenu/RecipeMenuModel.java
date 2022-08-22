@@ -10,13 +10,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecipeMenuModel implements MenuModel {
+    RecipePool recipePool;
+
+    public RecipeMenuModel(RecipePool recipePool) {
+        this.recipePool = recipePool;
+    }
 
     @Override
     public List<String> getMenuOptions() {
         List<String>recipeTitles = new ArrayList<>();
 
         // Make this a stream trick?
-        for (Recipe recipe: RecipePool.getAllRecipes()) {
+        for (Recipe recipe: recipePool.getAllRecipes()) {
             String title = recipe.getTitle();
             recipeTitles.add(title);
         }
@@ -24,7 +29,7 @@ public class RecipeMenuModel implements MenuModel {
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
-        Recipe recipe = RecipePool.getRecipe(selectedOption);
+        Recipe recipe = recipePool.getRecipe(selectedOption);
         RecipePrinter.printRecipe(recipe);
         RecipePrinter.waitForEnter();
     }

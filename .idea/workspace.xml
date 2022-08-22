@@ -4,18 +4,25 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="started to work on the 'generate recipe week' feature.">
-      <change afterPath="$PROJECT_DIR$/src/recipe/RandomCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recipe/RecipeWeekGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuView.java" afterDir="false" />
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Worked on the 'generate recipe week' feature.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/printers/RecipePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/RecipePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/recipes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dietitianMenu/DietitianMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/printers/RecipeWeekPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/RecipeWeekPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/RecipePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipePool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe/RecipeWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/RecipeWeekGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeWeekGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userMenu/UserMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Dietitian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661007332674</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Worked on the 'generate recipe week' feature.">
+      <created>1661092802732</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661092802732</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +177,7 @@
     <MESSAGE value="Added a menu model interface and menu view abstract class. Replaced specific menu controllers with one common menucontroller." />
     <MESSAGE value="Did some refactoring." />
     <MESSAGE value="started to work on the 'generate recipe week' feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="started to work on the 'generate recipe week' feature." />
+    <MESSAGE value="Worked on the 'generate recipe week' feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on the 'generate recipe week' feature." />
   </component>
 </project>

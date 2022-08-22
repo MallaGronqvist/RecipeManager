@@ -22,11 +22,11 @@ public class RecipeWeekMenuController {
         try {
             if (input.equalsIgnoreCase("t")){
                 model.processOption(input);
+            } else {
+                int selectedOption = Integer.parseInt(input);
+
+                model.processOption(String.valueOf(selectedOption));
             }
-
-            int selectedOption = Integer.parseInt(input);
-
-            model.processOption(String.valueOf(selectedOption));
         }
         catch (NumberFormatException | IndexOutOfBoundsException exception) {
             view.printInvalidOption();
