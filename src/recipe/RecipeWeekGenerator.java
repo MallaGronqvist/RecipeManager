@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class RecipeWeekGenerator {
 
-    public static RecipeWeek generateWeek(RecipePool recipePool){
+    public static RecipeWeek generateRecipeWeek(RecipePool recipePool){
 
         List<Recipe> recipes = recipePool.getAllRecipes();
         Collections.shuffle(recipes);

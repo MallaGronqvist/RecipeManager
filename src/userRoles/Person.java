@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public abstract class Person {
 
-    RecipePool recipePool;
+    protected RecipePool recipePool;
 
     Person(){
         recipePool = new RecipePool();
@@ -27,7 +27,7 @@ public abstract class Person {
     public RecipePool getRecipePool() {
         return recipePool;
     }
-
+    // Move to dieititian?
     public void signOut(){
         RecipeFileHandler.saveToFile(recipePool);
         new MainMenu();

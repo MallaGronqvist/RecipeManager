@@ -10,13 +10,7 @@ import recipe.RecipeFileHandler;
 import recipe.RecipePool;
 
 public class Dietitian extends Person {
-/*
-    RecipePool recipePool;
 
-    public Dietitian() {
-        this.recipePool = new RecipePool();;
-    }
-*/
     @Override
     public void printBanner() {
         System.out.println("Logged in as dietitian.");
@@ -42,15 +36,4 @@ public class Dietitian extends Person {
 
         new DietitianMenu(this);
     }
-/*
-    public RecipePool getRecipePool() {
-        return recipePool;
-    }
-
-    public void signOut(){
-        RecipeFileHandler.saveToFile(recipePool);
-        new MainMenu();
-    }
-
- */
 }

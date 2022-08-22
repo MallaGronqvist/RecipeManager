@@ -18,6 +18,7 @@ public class RecipeWeekMenuModel {
         this.recipeWeek = recipeWeek;
     }
 
+    // Change this to int
     public void processOption(String input) {
         Recipe requestedRecipe = new Recipe();
         switch (input){

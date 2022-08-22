@@ -27,14 +27,11 @@ public class UserMenuModel implements MenuModel {
             case 1 -> user.viewRecipeList();
             case 2 -> user.generateWeek();
             case 3 -> user.viewTodaysRecipe();
-            case 4 -> System.out.println("list of weeks");
+            case 4 -> user.viewAllRecipeWeeks();
             case 5 -> user.viewRecipe();
             case 6 -> user.signOut();
             default -> throw new IndexOutOfBoundsException();
         }
         new UserMenu(user);
     }
-
-
-
 }
