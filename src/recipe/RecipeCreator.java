@@ -13,9 +13,7 @@ public class RecipeCreator {
     public static Recipe enterRecipe() {
         Recipe recipe = new Recipe();
         addTitle(recipe);
-        RecipePrinter.printRecipe(recipe);
         addIngredients(recipe);
-        RecipePrinter.printRecipe(recipe);
         addSteps(recipe);
         return recipe;
     }
@@ -29,11 +27,9 @@ public class RecipeCreator {
 
         recipe.addStep(step);
 
-        RecipePrinter.printRecipe(recipe);
+        MenuPrinter.optionList(recipe.getSteps());
 
-        if (moreInput()) {
-            addSteps(recipe);
-        }
+        if (moreInput()) { addSteps(recipe);}
     }
 
     public static void addIngredients(Recipe recipe) {
@@ -47,7 +43,7 @@ public class RecipeCreator {
 
         recipe.addIngredient(ingredient);
 
-        RecipePrinter.printRecipe(recipe);
+        MenuPrinter.optionList(recipe.getIngredients());
 
         if (moreInput()) { addIngredients(recipe);}
     }
@@ -83,14 +79,16 @@ public class RecipeCreator {
         double quantity = 0;
 
         try {
-            quantity = Double.parseDouble(requestTextInput("Enter quantity: "));
+            String input = requestTextInput("Enter quantity: ");
+
+            quantity = Double.parseDouble(input);
 
             if (quantity <= 0) { throw new NumberFormatException();}
 
         } catch (NumberFormatException e) {
             System.out.println("Invalid input. Try again.");
 
-            requestQuantity();
+            quantity = requestQuantity();
         }
 
         return quantity;
@@ -99,6 +97,7 @@ public class RecipeCreator {
     private static boolean startsWithSpace(String input) {
         if (input.startsWith(" ")) {
             System.out.println("Your input starts with a space. This is not allowed. Try again.");
+
             return true;
         }
 
@@ -108,10 +107,12 @@ public class RecipeCreator {
     private static String requestTextInput(String request) {
         System.out.println(request);
 
-        String input = readUserInput();
+        String input = "";
+
+        input = readUserInput();
 
         if (startsWithSpace(input)) {
-            requestTextInput(request);
+            input = requestTextInput(request);
         }
 
         return input;

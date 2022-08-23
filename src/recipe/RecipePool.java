@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class RecipePool {
-    private List<Recipe> allRecipes;
+    private static List<Recipe> allRecipes;
 
     public RecipePool(){
         allRecipes = RecipeFileHandler.readFile();

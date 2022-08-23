@@ -21,6 +21,8 @@ public class RecipePrinter {
         System.out.println("Steps: \n");
 
         MenuPrinter.optionList(recipe.getSteps());
+
+        waitForEnter();
     }
 
     public static void waitForEnter() {

@@ -3,11 +3,11 @@ package userRoles;
 import RecipeMenu.RecipeMenu;
 import mainMenu.MainMenu;
 import printers.RecipePrinter;
+import printers.RecipeWeekPrinter;
 import recipe.*;
 import recipeWeekListMenu.RecipeWeekListMenu;
 import recipeWeekMenu.RecipeWeekMenu;
 import userMenu.UserMenu;
-
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.WeekFields;
@@ -23,7 +23,7 @@ public class User extends Person {
 
     @Override
     public void printBanner() {
-        System.out.println("Logged in as user.");
+        System.out.println("You are signed in as user.");
         System.out.println();
     }
 
@@ -36,10 +36,11 @@ public class User extends Person {
         int currentWeekNumber = RecipeWeekGenerator.generateWeekNumber();
 
         if(usersRecipeWeekMap.containsKey(currentWeekNumber)){
-            System.out.println("You have already generated a meal plan for the current week.");
+            System.out.println("You have already generated a meal plan for the current week:");
             System.out.println();
 
-            new UserMenu(this);
+            RecipeWeekPrinter.printWeek(usersRecipeWeekMap.get(currentWeekNumber));
+
         } else{
             RecipeWeek recipeWeek = RecipeWeekGenerator.generateRecipeWeek(recipePool);
 
@@ -47,22 +48,17 @@ public class User extends Person {
 
             new RecipeWeekMenu(recipeWeek);
 
-            RecipePrinter.waitForEnter();
         }
     }
 
     public void viewRecipeList(){
         new RecipeMenu(recipePool, "view");
-
-        new UserMenu(this);
     }
 
     public void viewTodaysRecipe(){
         LocalDate today = LocalDate.now();
         DayOfWeek dayOfWeek = LocalDate.now().getDayOfWeek();
-
         int currentWeek = today.get(WeekFields.of(Locale.GERMANY).weekOfYear());
-
         Recipe todaysRecipe = null;
 
         try {
@@ -72,12 +68,9 @@ public class User extends Person {
             System.out.println("No recipe for today was found in your recipe weeks.");
 
             RecipePrinter.waitForEnter();
-
-            new UserMenu(this);
         }
 
         RecipePrinter.printRecipe(todaysRecipe);
-        RecipePrinter.waitForEnter();
     }
 
     @Override
@@ -93,7 +86,6 @@ public class User extends Person {
         if(usersRecipeWeekMap.isEmpty()){
             System.out.println("You don't have any recipe weeks yet.");
             System.out.println();
-            new UserMenu(this);
         }
 
         new RecipeWeekListMenu(usersRecipeWeekMap);

@@ -21,6 +21,7 @@ public class RecipeWeekMenuModel {
     // Change this to int
     public void processOption(String input) {
         Recipe requestedRecipe = new Recipe();
+
         switch (input){
             case "t" -> requestedRecipe = recipeWeek.getRecipeByDay(LocalDate.now().getDayOfWeek());
             case "1" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.MONDAY);

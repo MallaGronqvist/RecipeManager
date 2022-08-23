@@ -1,16 +1,18 @@
-0:Chickpea Wrap:4.0 pc wrap;0.6 kg chickpeas;2.0 pc avocado;0.05 kg cilantro;1.0 pc tomato;1.0 pc capsicum:cut the vegetables;mix vegetables with cilantro and chickpeas;roll the mixture into wraps:1
-0:Brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour:shake all ingredients;mix properly;let rest;bake:1
-0:Carrot Soup:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add broth and vegetables and let boil for 10 minutes:1
-0:Pasta al Pesto:0.4 kg pasta;0.2 l pesto:boil the pasta in salted water;mix with pesto:1
-0:Vietnamese Noodles:0.4 kg fff:boil:1
-0:Tuna Salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
-0:ff:1.0 pc ss;1.0 pc test;2.0 kg another one:ddd:1
-0:Bean Salad:0.4 kg beans;0.6 kg salad vegetables;0.4 kg feta;0.05 l olive oil:cut vegetables;mix everything;serve with bread:1
-0:risotto:0.4 kg rice;0.1 l parmiggiano:boil;mix:1
-0:Salmon on Vegetable Bed:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti:1
-0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
-0:Greek Salad:1.0 pc feta;0.01 kg salad;0.25 pc onion;0.05 kg olives:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
-0:Zucchini Fritters:1.0 pc c:s:1
-0:Palak Paneer:1.0 pc test ingredient;5.0 kg another one:step 1;step 2:1
-0:Pizza:1.0 l ee:eejje:1
+0:Carrot Soup:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add broth and vegetables and let boil for 10 minutes:4
+0:ff:1.0 pc ss;1.0 pc test;2.0 kg another one:ddd:3
+0:Pizza:1.0 l ee:eejje:3
+0:Greek Salad:1.0 pc feta;0.01 kg salad;0.25 pc onion;0.05 kg olives:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:3
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:3
+0:Pasta al Pesto:0.4 kg pasta;0.2 l pesto:boil the pasta in salted water;mix with pesto:3
+0:risotto:0.4 kg rice;0.1 l parmiggiano:boil;mix:3
+0:Vietnamese Noodles:0.4 kg fff:boil:3
+0:Tuna Salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:3
+0:Zucchini Fritters:1.0 pc c:s:3
+0:Brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour:shake all ingredients;mix properly;let rest;bake:3
+0:Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:3
+0:Palak Paneer:1.0 pc test ingredient;5.0 kg another one:step 1;step 2:3
+0:Bean Salad:0.4 kg beans;0.6 kg salad vegetables;0.4 kg feta;0.05 l olive oil:cut vegetables;mix everything;serve with bread:3
+0:Chickpea Wrap:4.0 pc wrap;0.6 kg chickpeas;2.0 pc avocado;0.05 kg cilantro;1.0 pc tomato;1.0 pc capsicum:cut the vegetables;mix vegetables with cilantro and chickpeas;roll the mixture into wraps:3
+0:Mozzarella sandwich:0.0 pc mozzarella;0.5 pc mozzarella;0.5 pc mozzarella;1.0 pc mozzarella:cut and enjoy:3
+0:Salmon on Vegetable Bed:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti:3
+0:Spaghetti with shrimps:0.5 kg spaghetti;0.5 kg shrimps;4.0 pc garlic clove;0.05 kg butter:smash garlic and fry in butter together with shrimps;boil the spaghetti;mix shrimps and spaghetti:1

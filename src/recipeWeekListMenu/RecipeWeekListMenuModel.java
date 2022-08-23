@@ -22,6 +22,5 @@ public class RecipeWeekListMenuModel {
     public void processOption(int selectedOption) throws NullPointerException {
 
         new RecipeWeekMenu(usersRecipeWeekMap.get(selectedOption));
-        RecipePrinter.waitForEnter();
     }
 }

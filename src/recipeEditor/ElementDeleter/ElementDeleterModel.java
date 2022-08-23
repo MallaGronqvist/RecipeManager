@@ -39,6 +39,5 @@ public class ElementDeleterModel implements MenuModel {
         }
 
         RecipePrinter.printRecipe(recipe);
-        RecipePrinter.waitForEnter();
     }
 }
