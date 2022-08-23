@@ -3,8 +3,6 @@
 package recipe;
 
 import printers.MenuPrinter;
-import printers.RecipePrinter;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -57,16 +55,12 @@ public class RecipeCreator {
         try {
             int input = Integer.parseInt(requestTextInput("Choose a measurement: "));
 
-            switch (input) {
-                case 1: chosenMeasurement = "pc";
-                    break;
-                case 2: chosenMeasurement = "l";
-                    break;
-                case 3: chosenMeasurement = "kg";
-                    break;
-                default:
-                    throw new IndexOutOfBoundsException();
-            }
+            chosenMeasurement = switch (input) {
+                case 1 -> "pc";
+                case 2 -> "l";
+                case 3 -> "kg";
+                default -> throw new IndexOutOfBoundsException();
+            };
         } catch (IndexOutOfBoundsException | NumberFormatException e) {
             System.out.println("Invalid option. Try again.");
             requestMeasurementType();
@@ -76,7 +70,7 @@ public class RecipeCreator {
     }
 
     private static double requestQuantity() {
-        double quantity = 0;
+        double quantity;
 
         try {
             String input = requestTextInput("Enter quantity: ");
@@ -107,9 +101,7 @@ public class RecipeCreator {
     private static String requestTextInput(String request) {
         System.out.println(request);
 
-        String input = "";
-
-        input = readUserInput();
+        String input = readUserInput();
 
         if (startsWithSpace(input)) {
             input = requestTextInput(request);
@@ -120,9 +112,8 @@ public class RecipeCreator {
 
     private static String readUserInput() {
         Scanner keyboard = new Scanner(System.in);
-        String input = keyboard.nextLine();
 
-        return input;
+        return keyboard.nextLine();
     }
 
     private static boolean moreInput() {
