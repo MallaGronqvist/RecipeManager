@@ -52,7 +52,7 @@ public class User extends Person {
     }
 
     public void viewRecipeList(){
-        new RecipeMenu(recipePool);
+        new RecipeMenu(recipePool, "view");
 
         new UserMenu(this);
     }
@@ -68,7 +68,7 @@ public class User extends Person {
         try {
             todaysRecipe = usersRecipeWeekMap.get(currentWeek).getRecipeByDay(dayOfWeek);
 
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
             System.out.println("No recipe for today was found in your recipe weeks.");
 
             RecipePrinter.waitForEnter();
@@ -83,7 +83,9 @@ public class User extends Person {
     @Override
     public void signOut(){
         RecipeFileHandler.saveToFile(recipePool);
+
         RecipeWeekDatabase.saveUsersRecipeWeeks(usersRecipeWeekMap);
+
         new MainMenu();
     }
 

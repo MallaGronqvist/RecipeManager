@@ -1,16 +1,15 @@
 package dietitianMenu;
 
 import menus.MenuView;
-import printers.PrintHandler;
+import printers.MenuPrinter;
 
-import java.awt.*;
 import java.util.List;
 
 public class DietitianMenuView extends MenuView {
     public DietitianMenuView(List<String> menuOptions){
-        PrintHandler.clearConsole();
+        MenuPrinter.clearConsole();
         System.out.println("Choose an operation:");
-        PrintHandler.optionList(menuOptions);
+        MenuPrinter.optionList(menuOptions);
         super.requestUserInput();
     }
 }

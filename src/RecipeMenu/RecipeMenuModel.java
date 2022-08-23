@@ -4,6 +4,7 @@ import menus.MenuModel;
 import printers.RecipePrinter;
 import recipe.Recipe;
 import recipe.RecipePool;
+import recipeEditor.RecipeEditor;
 
 
 import java.util.ArrayList;
@@ -11,9 +12,12 @@ import java.util.List;
 
 public class RecipeMenuModel implements MenuModel {
     RecipePool recipePool;
+    String mode;
 
-    public RecipeMenuModel(RecipePool recipePool) {
+    public RecipeMenuModel(RecipePool recipePool, String mode) {
+
         this.recipePool = recipePool;
+        this.mode = mode;
     }
 
     @Override
@@ -26,12 +30,16 @@ public class RecipeMenuModel implements MenuModel {
             recipeTitles.add(title);
         }
         return recipeTitles;
+
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
         Recipe recipe = recipePool.getRecipe(selectedOption);
-        RecipePrinter.printRecipe(recipe);
-        RecipePrinter.waitForEnter();
+
+        switch(mode){
+            case "view" -> RecipePrinter.printRecipe(recipe);
+            case "edit" -> new RecipeEditor(recipe);
+        }
     }
 
     public List<Recipe> getRecipes() {

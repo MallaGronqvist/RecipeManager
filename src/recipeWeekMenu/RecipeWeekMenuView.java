@@ -1,13 +1,13 @@
 package recipeWeekMenu;
 
 import menus.MenuView;
-import printers.PrintHandler;
+import printers.MenuPrinter;
 import printers.RecipeWeekPrinter;
 import recipe.RecipeWeek;
 
 public class RecipeWeekMenuView extends MenuView {
     public RecipeWeekMenuView(RecipeWeek recipeWeek) {
-        PrintHandler.clearConsole();
+        MenuPrinter.clearConsole();
         RecipeWeekPrinter.printWeek(recipeWeek);
         requestUserInput();
     }

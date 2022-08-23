@@ -1,16 +1,17 @@
 package mainMenu;
 
 import menus.MenuView;
-import printers.PrintHandler;
+import printers.MenuPrinter;
 
 import java.util.List;
 
 public class MainMenuView extends MenuView {
     public MainMenuView(List<String> menuOptions) {
-        PrintHandler.clearConsole();
-        PrintHandler.appTitle();
+        MenuPrinter.clearConsole();
+        System.out.println("Welcome to Recipe Manager!");
+        System.out.println();
         System.out.println("Choose a user type:");
-        PrintHandler.optionList(menuOptions);
+        MenuPrinter.optionList(menuOptions);
         super.requestUserInput();
     }
 }

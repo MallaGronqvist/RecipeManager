@@ -22,7 +22,7 @@ public class DietitianMenuModel implements MenuModel {
         switch (selectedOption) {
             case 1 -> dietitian.viewRecipeList();
             case 2 -> dietitian.createRecipe();
-            case 3 -> System.out.println("Edit a recipe");
+            case 3 -> dietitian.editRecipe();
             case 4 -> dietitian.viewRecipe();
             case 5 -> dietitian.signOut();
             default -> throw new IndexOutOfBoundsException();

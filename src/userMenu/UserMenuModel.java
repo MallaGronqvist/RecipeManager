@@ -1,13 +1,9 @@
 package userMenu;
 
-import RecipeMenu.RecipeMenu;
-import mainMenu.MainMenu;
 import menus.MenuModel;
-import recipe.RecipeFileHandler;
 import userRoles.User;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class UserMenuModel implements MenuModel {
     private final List<String> menuOptions = List.of("List recipes", "Generate a new week", "View today's recipe",

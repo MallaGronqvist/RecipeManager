@@ -2,15 +2,15 @@ package userMenu;
 
 
 import menus.MenuView;
-import printers.PrintHandler;
+import printers.MenuPrinter;
 
 import java.util.List;
 
 public class UserMenuView extends MenuView {
     public UserMenuView(List<String> menuOptions){
-        PrintHandler.clearConsole();
+        MenuPrinter.clearConsole();
         System.out.println("Choose an operation:");
-        PrintHandler.optionList(menuOptions);
+        MenuPrinter.optionList(menuOptions);
         super.requestUserInput();
     }
 }

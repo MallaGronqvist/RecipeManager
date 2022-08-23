@@ -3,10 +3,7 @@ package printers;
 import java.io.IOException;
 import java.util.List;
 
-public class PrintHandler {
-    public static void appTitle() {
-        System.out.println("Recipe Manager");
-    }
+public class MenuPrinter {
 
     public static void clearConsole() {
         String operatingSystem = System.getProperty("os.name");
@@ -17,10 +14,6 @@ public class PrintHandler {
         else {
             clearConsoleUnix();
         }
-    }
-
-    public static void optionBackToMainMenu() {
-        System.out.println("[0] Back to main menu");
     }
 
     public static void optionList(List<?> options) {

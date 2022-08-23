@@ -22,6 +22,7 @@ public class RecipeFileHandler {
             }
         } catch (IOException e) {
             System.out.println("Recipes could not be loaded from file.");
+
             System.exit(0);
         }
 
@@ -31,8 +32,7 @@ public class RecipeFileHandler {
     public static void saveToFile(RecipePool recipePool){
         Iterator<Recipe>iterator = recipePool.getIterator();
 
-        File file = new File("recipes.txt");
-        try (Writer output = new BufferedWriter(new FileWriter(file))){
+        try (Writer output = new BufferedWriter(new FileWriter(new File("recipes.txt")))){
 
             while(iterator.hasNext()) {
                 Recipe recipe = iterator.next();

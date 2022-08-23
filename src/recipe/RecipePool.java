@@ -20,13 +20,8 @@ public class RecipePool {
 
     public void addRecipe(Recipe recipe){
 
-        System.out.println("Now adding the recipe");
         allRecipes.add(recipe);
 
-        for (Recipe recipeX: allRecipes) {
-            System.out.println(recipeX);
-
-        }
     }
 
     public List<Recipe> getAllRecipes() {

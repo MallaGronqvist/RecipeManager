@@ -2,8 +2,7 @@
 
 package recipe;
 
-import dietitianMenu.DietitianMenu;
-import printers.PrintHandler;
+import printers.MenuPrinter;
 import printers.RecipePrinter;
 
 import java.util.List;
@@ -55,7 +54,7 @@ public class RecipeCreator {
 
     private static String requestMeasurementType() {
         List<String> measurements = List.of("Quantity (pc)", "Liters (l)", "Kilograms (kg)");
-        PrintHandler.optionList(measurements);
+        MenuPrinter.optionList(measurements);
 
         String chosenMeasurement = "";
 

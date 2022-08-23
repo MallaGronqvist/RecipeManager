@@ -1,5 +1,5 @@
 // A prototype database for saving the single user's all recipe weeks
-// so that they don't disappear when user logs out.
+// so that they don't disappear when user logs out / during program runtime.
 
 package recipe;
 

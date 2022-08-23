@@ -32,7 +32,15 @@ public class Dietitian extends Person {
     }
 
     public void viewRecipeList(){
-        new RecipeMenu(recipePool);
+        new RecipeMenu(recipePool, "view");
+
+        RecipePrinter.waitForEnter();
+
+        new DietitianMenu(this);
+    }
+
+    public void editRecipe(){
+        new RecipeMenu(recipePool, "edit");
 
         new DietitianMenu(this);
     }

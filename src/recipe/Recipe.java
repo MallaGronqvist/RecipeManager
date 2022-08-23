@@ -23,10 +23,10 @@ public class Recipe {
         this.title = recipeDetails[1];
         String ingredients = recipeDetails[2];
         String[] parsedIngredients = ingredients.split(";");
-        setIngredients(List.of(parsedIngredients));
+        setIngredients(new ArrayList<>(List.of(parsedIngredients)));
         String steps = recipeDetails[3];
         String[] parsedSteps = steps.split(";");
-        setSteps(List.of(parsedSteps));
+        setSteps(new ArrayList<>(List.of(parsedSteps)));
         this.weight = Integer.parseInt(recipeDetails[4]);
     }
 
@@ -105,7 +105,8 @@ public class Recipe {
     public int getWeight() {
         return weight;
     }
-     public void setWeight(int weight){
+
+    public void setWeight(int weight){
         this.weight = weight;
      }
 
