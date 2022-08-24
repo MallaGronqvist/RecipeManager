@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Recipe {
-    List<String> ingredients;
-    List<String> steps;
-    int id;
+    private List<String> ingredients;
+    private List<String> steps;
     private String title;
     private int weight;
 
@@ -14,20 +13,18 @@ public class Recipe {
         this.title = "No Name";
         this.ingredients = new ArrayList<>();
         this.steps = new ArrayList<>();
-        this.id = 0;
-        this.weight = 1;
+        this.weight = 0;
     }
 
     public Recipe(String[] recipeDetails) {
-        this.id = Integer.parseInt(recipeDetails[0]);
-        this.title = recipeDetails[1];
-        String ingredients = recipeDetails[2];
+        this.title = recipeDetails[0];
+        String ingredients = recipeDetails[1];
         String[] parsedIngredients = ingredients.split(";");
         setIngredients(new ArrayList<>(List.of(parsedIngredients)));
-        String steps = recipeDetails[3];
+        String steps = recipeDetails[2];
         String[] parsedSteps = steps.split(";");
         setSteps(new ArrayList<>(List.of(parsedSteps)));
-        this.weight = Integer.parseInt(recipeDetails[4]);
+        this.weight = Integer.parseInt(recipeDetails[3]);
     }
 
     @Override
@@ -36,29 +33,28 @@ public class Recipe {
     }
 
     public String ingredientsToString() {
-        String ingredientsString = "";
+        StringBuilder ingredientsString = new StringBuilder();
 
         for (String ingredient : ingredients) {
-            ingredientsString = ingredientsString + (new StringBuilder()).append(ingredient).append(";");
+            ingredientsString.append(ingredient).append(";");
         }
-        ingredientsString = ingredientsString.substring(0, ingredientsString.length() - 1);
-        return ingredientsString;
+        ingredientsString = new StringBuilder(ingredientsString.substring(0, ingredientsString.length() - 1));
+        return ingredientsString.toString();
     }
 
     public String stepsToString() {
-        String stepsString = "";
+        StringBuilder stepsString = new StringBuilder();
 
         for (String step : steps) {
-            stepsString = stepsString + (new StringBuilder()).append(step).append(";");
+            stepsString.append(step).append(";");
         }
-        stepsString = stepsString.substring(0, stepsString.length() - 1);
-        return stepsString;
+        stepsString = new StringBuilder(stepsString.substring(0, stepsString.length() - 1));
+        return stepsString.toString();
     }
 
     public String printable() {
         final String delimiter = ":";
-        return id + delimiter + title + delimiter +
-                ingredientsToString() + delimiter +
+        return title + delimiter + ingredientsToString() + delimiter +
                 stepsToString() + delimiter + weight + "\n";
     }
 
@@ -82,14 +78,6 @@ public class Recipe {
         steps.add(step);
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getTitle() {
         return title;
     }
@@ -105,10 +93,6 @@ public class Recipe {
     public int getWeight() {
         return weight;
     }
-
-    public void setWeight(int weight){
-        this.weight = weight;
-     }
 
     public void addWeight() {
         this.weight += 1;

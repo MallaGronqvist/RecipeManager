@@ -39,6 +39,7 @@ public class RecipeMenuModel implements MenuModel {
         switch(mode){
             case "view" -> RecipePrinter.printRecipe(recipe);
             case "edit" -> new RecipeEditor(recipe);
+            default -> throw new IndexOutOfBoundsException();
         }
     }
 

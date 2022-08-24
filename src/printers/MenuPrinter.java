@@ -8,15 +8,16 @@ public class MenuPrinter {
     public static void clearConsole() {
         String operatingSystem = System.getProperty("os.name");
 
-        if (operatingSystem.equals("Windows")) {
+        if (operatingSystem.contains("Windows")) {
             clearConsoleWindows();
-        }
-        else {
+
+        } else {
             clearConsoleUnix();
         }
     }
 
-    public static void optionList(List<?> options) {
+    public static void listOptions(List<?> options) {
+
         for (int index = 0; index < options.size(); index++) {
             int number = index + 1;
 
@@ -35,12 +36,11 @@ public class MenuPrinter {
 
         try {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+
         } catch (IOException | InterruptedException e) {
             String errorMessage = "An unexpected error has occurred, which may result in the program " +
                     "not displaying correctly.";
             System.out.println(errorMessage);
         }
     }
-
-
 }

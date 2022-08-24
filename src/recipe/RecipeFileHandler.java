@@ -5,11 +5,10 @@ import java.util.*;
 
 public class RecipeFileHandler {
 
-
     public static List<Recipe> readFile(){
         List<Recipe> recipes = new ArrayList<>();
 
-        try (FileReader fileReader = new FileReader("recipes.txt");
+        try (FileReader fileReader = new FileReader("assets/recipes.txt");
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             String line;
 
@@ -32,7 +31,7 @@ public class RecipeFileHandler {
     public static void saveToFile(RecipePool recipePool){
         Iterator<Recipe>iterator = recipePool.getIterator();
 
-        try (Writer output = new BufferedWriter(new FileWriter(new File("recipes.txt")))){
+        try (Writer output = new BufferedWriter(new FileWriter("assets/recipes.txt"))){
 
             while(iterator.hasNext()) {
                 Recipe recipe = iterator.next();

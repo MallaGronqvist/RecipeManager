@@ -2,8 +2,8 @@ package userRoles;
 
 import RecipeMenu.RecipeMenu;
 import mainMenu.MainMenu;
+import printers.MenuPrinter;
 import printers.RecipePrinter;
-import printers.RecipeWeekPrinter;
 import recipe.*;
 import recipeWeekListMenu.RecipeWeekListMenu;
 import recipeWeekMenu.RecipeWeekMenu;
@@ -14,11 +14,11 @@ import java.time.temporal.WeekFields;
 import java.util.*;
 
 public class User extends Person {
-    Map<Integer, RecipeWeek> usersRecipeWeekMap;
+    private static Map<Integer, RecipeWeek> usersRecipeWeekMap;
 
     public User() {
         super();
-        usersRecipeWeekMap = RecipeWeekDatabase.getUsersRecipeWeeks();
+        usersRecipeWeekMap = RecipeWeekDatabase.getUsersRecipeWeekMap();
     }
 
     @Override
@@ -35,19 +35,22 @@ public class User extends Person {
     public void generateWeek(){
         int currentWeekNumber = RecipeWeekGenerator.generateWeekNumber();
 
+        // If current week has already been generated show it.
         if(usersRecipeWeekMap.containsKey(currentWeekNumber)){
-            System.out.println("You have already generated a meal plan for the current week:");
-            System.out.println();
 
-            RecipeWeekPrinter.printWeek(usersRecipeWeekMap.get(currentWeekNumber));
+            new RecipeWeekMenu(usersRecipeWeekMap.get(currentWeekNumber));
 
         } else{
-            RecipeWeek recipeWeek = RecipeWeekGenerator.generateRecipeWeek(recipePool);
+            try {
+                RecipeWeek recipeWeek = RecipeWeekGenerator.generateRecipeWeek(recipePool);
 
-            usersRecipeWeekMap.put(recipeWeek.getWeekNumber(), recipeWeek);
+                usersRecipeWeekMap.put(recipeWeek.getWeekNumber(), recipeWeek);
 
-            new RecipeWeekMenu(recipeWeek);
+                new RecipeWeekMenu(recipeWeek);
+            } catch (IndexOutOfBoundsException e) {
 
+                System.out.println("Recipe week can't be generated at the moment.");
+            }
         }
     }
 
@@ -64,13 +67,13 @@ public class User extends Person {
         try {
             todaysRecipe = usersRecipeWeekMap.get(currentWeek).getRecipeByDay(dayOfWeek);
 
+            RecipePrinter.printRecipe(todaysRecipe);
+
         } catch (NullPointerException e) {
+            MenuPrinter.clearConsole();
             System.out.println("No recipe for today was found in your recipe weeks.");
-
-            RecipePrinter.waitForEnter();
+            System.out.println();
         }
-
-        RecipePrinter.printRecipe(todaysRecipe);
     }
 
     @Override
@@ -84,10 +87,11 @@ public class User extends Person {
 
     public void viewAllRecipeWeeks() {
         if(usersRecipeWeekMap.isEmpty()){
+            MenuPrinter.clearConsole();
             System.out.println("You don't have any recipe weeks yet.");
             System.out.println();
+        } else{
+            new RecipeWeekListMenu(usersRecipeWeekMap);
         }
-
-        new RecipeWeekListMenu(usersRecipeWeekMap);
     }
 }

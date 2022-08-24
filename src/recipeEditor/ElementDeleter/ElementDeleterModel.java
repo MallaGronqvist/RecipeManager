@@ -35,9 +35,9 @@ public class ElementDeleterModel implements MenuModel {
             switch (elementType){
                 case "step" -> recipe.setSteps(elements);
                 case "ingredient" -> recipe.setIngredients(elements);
+                default -> throw new IndexOutOfBoundsException();
             }
         }
-
         RecipePrinter.printRecipe(recipe);
     }
 }

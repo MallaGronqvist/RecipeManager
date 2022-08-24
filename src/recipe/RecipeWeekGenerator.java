@@ -8,8 +8,12 @@ import java.util.stream.Collectors;
 
 public class RecipeWeekGenerator {
 
-    public static RecipeWeek generateRecipeWeek(RecipePool recipePool){
+    public static RecipeWeek generateRecipeWeek(RecipePool recipePool)throws IndexOutOfBoundsException{
         List<Recipe> recipes = recipePool.getAllRecipes();
+
+        if(recipes.size()<7){
+            throw new IndexOutOfBoundsException();
+        }
 
         // Shuffle recipes to randomize order.
         Collections.shuffle(recipes);

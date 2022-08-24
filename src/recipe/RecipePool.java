@@ -6,19 +6,19 @@ import java.util.List;
 public class RecipePool {
     private static List<Recipe> allRecipes;
 
-    public RecipePool(){
+    public RecipePool() {
         allRecipes = RecipeFileHandler.readFile();
     }
 
     public Recipe getRecipe(int selectedOption) {
-        return allRecipes.get(selectedOption-1);
+        return allRecipes.get(selectedOption - 1);
     }
 
-    Iterator<Recipe> getIterator(){
+    Iterator<Recipe> getIterator() {
         return allRecipes.listIterator();
     }
 
-    public void addRecipe(Recipe recipe){
+    public void addRecipe(Recipe recipe) {
 
         allRecipes.add(recipe);
 

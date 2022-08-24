@@ -26,6 +26,7 @@ public class DietitianMenuModel implements MenuModel {
             case 4 -> dietitian.signOut();
             default -> throw new IndexOutOfBoundsException();
         }
+
         new DietitianMenu(dietitian);
     }
 }

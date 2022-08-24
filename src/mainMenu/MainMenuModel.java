@@ -1,6 +1,7 @@
 package mainMenu;
 
 import menus.MenuModel;
+import printers.MenuPrinter;
 import userRoles.Dietitian;
 import userRoles.Person;
 import userRoles.User;
@@ -8,21 +9,23 @@ import userRoles.User;
 import java.util.List;
 
 public class MainMenuModel implements MenuModel {
-    private final List<String> menuOptions = List.of("Log in as user", "Log in as dietitian");
+    private final List<String> menuOptions = List.of("Sign in as user", "Sign in as dietitian");
     public List<String> getMenuOptions() {
         return menuOptions;
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
-        Person loggedInUser;
+        Person signedInUser;
 
         switch (selectedOption) {
-            case 1 -> loggedInUser = new User();
-            case 2 -> loggedInUser = new Dietitian();
+            case 1 -> signedInUser = new User();
+            case 2 -> signedInUser = new Dietitian();
             default -> throw new IndexOutOfBoundsException();
         }
 
-        loggedInUser.printBanner();
-        loggedInUser.sessionLoop();
+        MenuPrinter.clearConsole();
+
+        signedInUser.printBanner();
+        signedInUser.sessionLoop();
     }
 }

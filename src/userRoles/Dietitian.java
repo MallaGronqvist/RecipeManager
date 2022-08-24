@@ -24,6 +24,8 @@ public class Dietitian extends Person {
         RecipePrinter.printRecipe(newRecipe);
 
         recipePool.addRecipe(newRecipe);
+
+        RecipePrinter.waitForEnter();
     }
 
     public void viewRecipeList(){

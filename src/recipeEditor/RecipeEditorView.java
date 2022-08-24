@@ -15,7 +15,7 @@ public class RecipeEditorView extends MenuView {
         RecipePrinter.printRecipe(recipe);
         System.out.println();
         System.out.println("Available operations:");
-        MenuPrinter.optionList(options);
+        MenuPrinter.listOptions(options);
         super.requestUserInput();
     }
 }

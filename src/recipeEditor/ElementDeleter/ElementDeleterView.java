@@ -10,7 +10,7 @@ public class ElementDeleterView extends MenuView {
         MenuPrinter.clearConsole();
         System.out.println("Options for deleting:");
         System.out.println();
-        MenuPrinter.optionList(elements);
+        MenuPrinter.listOptions(elements);
         requestUserInput();
     }
 

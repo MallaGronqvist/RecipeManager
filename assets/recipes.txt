@@ -1,0 +1,24 @@
+Pasta al Pesto:0.4 kg pasta;0.2 l pesto:boil the pasta in salted water;mix with pesto:8
+Spaghetti with shrimps:0.5 kg spaghetti;0.5 kg shrimps;4.0 pc garlic clove;0.05 kg butter:smash garlic and fry in butter together with shrimps;boil the spaghetti;mix shrimps and spaghetti:8
+Aloo Gobi:1.0 kg potatoes;0.01 kg spices;0.5 kg cauliflower;0.7 kg tomatoe:cut the vegetables into cibes;boil them;fry spices in oil;add cubed tomatoes;add boiled vegetables:8
+Zucchini Fritters:1.0 pc c:s:8
+ff:1.0 pc ss;1.0 pc test;2.0 kg another one;2.0 pc second one:ddd:8
+Title:1.0 pc Potato:peal and eat:8
+Chickpea Wrap:4.0 pc wrap;0.6 kg chickpeas;2.0 pc avocado;0.05 kg cilantro;1.0 pc tomato;1.0 pc capsicum:cut the vegetables;mix vegetables with cilantro and chickpeas;roll the mixture into wraps:8
+Mozzarella sandwich:0.0 pc mozzarella;0.5 pc mozzarella;0.5 pc mozzarella;1.0 pc mozzarella:cut and enjoy:8
+risotto:0.4 kg rice;0.1 l parmiggiano:boil;mix:7
+Brownie:0.3 kg sugar;2.0 pc egg;0.3 l flour:shake all ingredients;mix properly;let rest;bake:7
+Carrot Soup:1.0 pc carrot;2.0 pc potato;1.0 pc onion;0.4 kg beans;1.0 l brooth:peel vegetables;cut vegetables in cubes;fry onion;add broth and vegetables and let boil for 10 minutes:7
+Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:7
+Aubergine sandwich:1.0 pc aubergine;0.1 l olive oil;0.001 kg salt;0.1 l parsley;1.0 pc tomato:bake the aubergine in the oven for an hour;mix cubed tomatoes with chopped parsley, salt and olive oil;cut the aubergine in half and pour mixture on top:7
+Greek Salad:1.0 pc feta;0.01 kg salad;0.25 pc onion;0.05 kg olives:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:8
+Vietnamese Noodles:0.4 kg fff:boil:7
+Filled peppers:0.5 kg rice;1.0 pc onion;0.3 kg cheese;6.0 pc peppers:cube the onion;boil the rice;mix fillings;stuff the peppers and cook in oven:7
+Crepes:0.4 kg flour;0.4 l milk;0.001 kg salt;0.02 l oil:mix the ingredients in a bowl;fry crepes in a pan with some oil;serve with some filling:7
+Bean Salad:0.4 kg beans;0.6 kg salad vegetables;0.4 kg feta;0.05 l olive oil:cut vegetables;mix everything;serve with bread:8
+Pizza:1.0 l ee:eejje:7
+Salmon on Vegetable Bed:1.0 pc muna;2.0 pc kinkku;2.0 kg tomaatti:sekoita;paista;nauti:7
+Palak Paneer:1.0 pc test ingredient;5.0 kg another one:step 1;step 2:7
+Danish smorrebrod:1.0 pc bread;0.01 kg butter;1.0 pc cheese slice;7.0 pc cucumber slice:spread butter on bread;put cheese slice and cucumbers on top:7
+Summer soup:0.5 kg peas;2.0 pc carrot;5.0 pc potato;6.0 pc salad onion;0.2 l cream;1.0 l water;0.01 kg spices:cut and mix all vegetables;boil vegetables;add spices and cream:7
+Moussaka:3.0 pc zucchini;0.8 l polpa di pomodoro;1.0 pc onion;0.2 kg cheese:slice the zucchini;cut onion into cubes;fry onion in a pan and add popla;place layers of the ingredients in an oven pan;cook in the oven for 30 mins:7

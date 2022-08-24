@@ -31,7 +31,7 @@ public class RecipeEditorModel implements MenuModel {
             case 2 -> new ElementDeleter(recipe, "ingredient");
             case 3 -> RecipeCreator.addSteps(recipe);
             case 4 -> RecipeCreator.addIngredients(recipe);
+            default -> throw new IndexOutOfBoundsException();
         }
-
     }
 }

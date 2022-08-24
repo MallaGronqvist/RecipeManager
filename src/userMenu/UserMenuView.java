@@ -8,9 +8,9 @@ import java.util.List;
 
 public class UserMenuView extends MenuView {
     public UserMenuView(List<String> menuOptions){
-        MenuPrinter.clearConsole();
+  //      MenuPrinter.clearConsole();
         System.out.println("Choose an operation:");
-        MenuPrinter.optionList(menuOptions);
+        MenuPrinter.listOptions(menuOptions);
         super.requestUserInput();
     }
 }

@@ -1,10 +1,8 @@
-// Move some of the helper methods to another class.
-
 package recipe;
 
 import printers.MenuPrinter;
+
 import java.util.List;
-import java.util.Scanner;
 
 public class RecipeCreator {
 
@@ -17,21 +15,25 @@ public class RecipeCreator {
     }
 
     public static void addTitle(Recipe recipe) {
-        recipe.setTitle(requestTextInput("Enter recipe title and press enter:"));
+        recipe.setTitle(InputHelper.requestTextInput("Enter recipe title and press enter:"));
     }
 
     public static void addSteps(Recipe recipe) {
-        String step = requestTextInput("Enter a step and press enter:");
+        String step = InputHelper.requestTextInput("Enter a step and press enter:");
 
         recipe.addStep(step);
 
-        MenuPrinter.optionList(recipe.getSteps());
+        MenuPrinter.clearConsole();
 
-        if (moreInput()) { addSteps(recipe);}
+        MenuPrinter.listOptions(recipe.getSteps());
+
+        if (InputHelper.moreInput()) {
+            addSteps(recipe);
+        }
     }
 
     public static void addIngredients(Recipe recipe) {
-        String ingredient = requestTextInput("Enter an ingredient and press enter: ");
+        String ingredient = InputHelper.requestTextInput("Enter an ingredient and press enter: ");
 
         String measurement = requestMeasurementType();
 
@@ -41,19 +43,24 @@ public class RecipeCreator {
 
         recipe.addIngredient(ingredient);
 
-        MenuPrinter.optionList(recipe.getIngredients());
+        MenuPrinter.clearConsole();
 
-        if (moreInput()) { addIngredients(recipe);}
+        MenuPrinter.listOptions(recipe.getIngredients());
+
+        if (InputHelper.moreInput()) {
+            addIngredients(recipe);
+        }
     }
 
     private static String requestMeasurementType() {
         List<String> measurements = List.of("Quantity (pc)", "Liters (l)", "Kilograms (kg)");
-        MenuPrinter.optionList(measurements);
 
-        String chosenMeasurement = "";
+        MenuPrinter.listOptions(measurements);
+
+        String chosenMeasurement;
 
         try {
-            int input = Integer.parseInt(requestTextInput("Choose a measurement: "));
+            int input = Integer.parseInt(InputHelper.requestTextInput("Choose a measurement: "));
 
             chosenMeasurement = switch (input) {
                 case 1 -> "pc";
@@ -63,7 +70,7 @@ public class RecipeCreator {
             };
         } catch (IndexOutOfBoundsException | NumberFormatException e) {
             System.out.println("Invalid option. Try again.");
-            requestMeasurementType();
+            return requestMeasurementType();
         }
 
         return chosenMeasurement;
@@ -73,60 +80,20 @@ public class RecipeCreator {
         double quantity;
 
         try {
-            String input = requestTextInput("Enter quantity: ");
+            String input = InputHelper.requestTextInput("Enter quantity: ");
 
             quantity = Double.parseDouble(input);
 
-            if (quantity <= 0) { throw new NumberFormatException();}
+            if (quantity <= 0) {
+                throw new NumberFormatException();
+            }
 
         } catch (NumberFormatException e) {
             System.out.println("Invalid input. Try again.");
 
-            quantity = requestQuantity();
+            return requestQuantity();
         }
 
         return quantity;
-    }
-
-    private static boolean startsWithSpace(String input) {
-        if (input.startsWith(" ")) {
-            System.out.println("Your input starts with a space. This is not allowed. Try again.");
-
-            return true;
-        }
-
-        return false;
-    }
-
-    private static String requestTextInput(String request) {
-        System.out.println(request);
-
-        String input = readUserInput();
-
-        if (startsWithSpace(input)) {
-            input = requestTextInput(request);
-        }
-
-        return input;
-    }
-
-    private static String readUserInput() {
-        Scanner keyboard = new Scanner(System.in);
-
-        return keyboard.nextLine();
-    }
-
-    private static boolean moreInput() {
-        String answer = requestTextInput("Add more? Type 'Y' for yes or 'N' for no.");
-
-        if (answer.equalsIgnoreCase("y")) {
-            return true;
-        } else if (answer.equalsIgnoreCase("n")) {
-            return false;
-        } else {
-            System.out.println("Invalid input. Try again");
-
-            return moreInput();
-        }
     }
 }

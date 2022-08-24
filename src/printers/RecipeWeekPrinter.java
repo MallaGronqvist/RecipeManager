@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class RecipeWeekPrinter {
 
-    public static void printWeek(RecipeWeek recipeWeek){
+    public static void printWeek(RecipeWeek recipeWeek) {
 
         System.out.println("Week " + recipeWeek.getWeekNumber() + " Meal Plan:");
         System.out.println();
@@ -17,7 +17,7 @@ public class RecipeWeekPrinter {
 
         int index = 1;
 
-        for (DayOfWeek day: recipeMap.keySet()) {
+        for (DayOfWeek day : recipeMap.keySet()) {
             System.out.print("[" + index + "] ");
             System.out.println(day);
             System.out.println(recipeMap.get(day));
@@ -25,6 +25,5 @@ public class RecipeWeekPrinter {
 
             index++;
         }
-
     }
 }

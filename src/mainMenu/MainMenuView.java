@@ -6,6 +6,7 @@ import printers.MenuPrinter;
 import java.util.List;
 
 public class MainMenuView extends MenuView {
+
     public MainMenuView(List<String> menuOptions) {
         MenuPrinter.clearConsole();
 
@@ -13,7 +14,7 @@ public class MainMenuView extends MenuView {
         System.out.println();
         System.out.println("Choose your user type:");
 
-        MenuPrinter.optionList(menuOptions);
+        MenuPrinter.listOptions(menuOptions);
 
         requestUserInput();
     }

@@ -1,6 +1,7 @@
 package userMenu;
 
 import menus.MenuModel;
+import printers.MenuPrinter;
 import userRoles.User;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public class UserMenuModel implements MenuModel {
             case 5 -> user.signOut();
             default -> throw new IndexOutOfBoundsException();
         }
+
         new UserMenu(user);
     }
 }

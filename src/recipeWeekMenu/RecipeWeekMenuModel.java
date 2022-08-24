@@ -31,6 +31,7 @@ public class RecipeWeekMenuModel {
             case "5" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.FRIDAY);
             case "6" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SATURDAY);
             case "7" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SUNDAY);
+            default -> throw new IndexOutOfBoundsException();
         }
 
         RecipePrinter.printRecipe(requestedRecipe);

@@ -1,26 +1,34 @@
 package recipeWeekListMenu;
 
 import menus.MenuModel;
-import printers.RecipePrinter;
 import recipe.RecipeWeek;
 import recipeWeekMenu.RecipeWeekMenu;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
-public class RecipeWeekListMenuModel {
+public class RecipeWeekListMenuModel implements MenuModel {
     Map<Integer, RecipeWeek> usersRecipeWeekMap;
 
     public RecipeWeekListMenuModel(Map<Integer, RecipeWeek> usersRecipeWeekMap) {
         this.usersRecipeWeekMap = usersRecipeWeekMap;
     }
 
-    public Map<Integer, RecipeWeek> getUsersRecipeWeekMap() {
-        return usersRecipeWeekMap;
+    @Override
+    public List<String> getMenuOptions() {
+        List<String> weekNumbers = usersRecipeWeekMap.keySet().stream().map(Object::toString).collect(Collectors.toList());
+        return weekNumbers;
     }
 
     public void processOption(int selectedOption) throws NullPointerException {
 
-        new RecipeWeekMenu(usersRecipeWeekMap.get(selectedOption));
+        if (usersRecipeWeekMap.containsKey(selectedOption)) {
+            RecipeWeek recipeWeek = usersRecipeWeekMap.get(selectedOption);
+            new RecipeWeekMenu(recipeWeek);
+        } else {
+            throw new NullPointerException();
+        }
+
     }
 }

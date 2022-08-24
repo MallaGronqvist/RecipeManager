@@ -1,8 +1,5 @@
 package menus;
 
-import dietitianMenu.DietitianMenuModel;
-import dietitianMenu.DietitianMenuView;
-
 import java.util.Scanner;
 
 public class MenuController {
@@ -22,8 +19,8 @@ public class MenuController {
             int selectedOption = Integer.parseInt(input);
 
             model.processOption(selectedOption);
-        }
-        catch (NumberFormatException | IndexOutOfBoundsException exception) {
+
+        } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException exception) {
             view.printInvalidOption();
             view.requestUserInput();
             readUserInput();

@@ -2,7 +2,7 @@ package menus;
 
 public abstract class MenuView {
     public void printInvalidOption() {
-        System.out.println("Invalid option");
+        System.out.println("You entered an invalid option.");
     }
 
     public void requestUserInput() {
