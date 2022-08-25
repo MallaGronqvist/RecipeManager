@@ -1,4 +1,4 @@
-package menus;
+package menuCommons;
 
 public abstract class MenuView {
     public void printInvalidOption() {

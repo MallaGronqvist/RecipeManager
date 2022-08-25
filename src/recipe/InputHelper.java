@@ -1,3 +1,5 @@
+// A class with some helper methods for getting input from the user.
+
 package recipe;
 
 import java.util.Scanner;

@@ -1,6 +1,6 @@
-package recipeEditor.ElementDeleter;
+package recipeEditorMenu.ElementDeleter;
 
-import menus.MenuController;
+import menuCommons.MenuController;
 import recipe.Recipe;
 
 public class ElementDeleter {

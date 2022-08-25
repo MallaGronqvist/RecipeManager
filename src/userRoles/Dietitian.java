@@ -16,7 +16,9 @@ public class Dietitian extends Person {
     }
 
     @Override
-    public void sessionLoop() { new DietitianMenu(this);}
+    public void sessionLoop() {
+        new DietitianMenu(this);
+    }
 
     public void createRecipe() {
         Recipe newRecipe = RecipeCreator.enterRecipe();
@@ -28,11 +30,11 @@ public class Dietitian extends Person {
         RecipePrinter.waitForEnter();
     }
 
-    public void viewRecipeList(){
+    public void viewRecipeList() {
         new RecipeMenu(recipePool, "view");
     }
 
-    public void editRecipe(){
+    public void editRecipe() {
         new RecipeMenu(recipePool, "edit");
     }
 }

@@ -1,6 +1,6 @@
 package dietitianMenu;
 
-import menus.MenuController;
+import menuCommons.MenuController;
 import userRoles.Dietitian;
 
 public class DietitianMenu {

@@ -1,9 +1,12 @@
-package recipe;
+package fileHandlers;
+
+import recipe.Recipe;
+import recipe.RecipePool;
 
 import java.io.*;
 import java.util.*;
 
-public class RecipeFileHandler {
+public class RecipePoolFileHandler {
 
     public static List<Recipe> readFile(){
         List<Recipe> recipes = new ArrayList<>();
@@ -40,7 +43,7 @@ public class RecipeFileHandler {
             }
 
         } catch (IOException e) {
-            System.out.println("Couldn't save recipes to file 'recipes.txt'");
+            System.out.println("Couldn't save recipes to file.");
         }
     }
 }

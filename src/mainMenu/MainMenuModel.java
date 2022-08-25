@@ -1,6 +1,6 @@
 package mainMenu;
 
-import menus.MenuModel;
+import menuCommons.MenuModel;
 import printers.MenuPrinter;
 import userRoles.Dietitian;
 import userRoles.Person;

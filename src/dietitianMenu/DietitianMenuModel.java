@@ -1,6 +1,6 @@
 package dietitianMenu;
 
-import menus.MenuModel;
+import menuCommons.MenuModel;
 import userRoles.Dietitian;
 
 import java.util.List;

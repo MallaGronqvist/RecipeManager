@@ -1,6 +1,6 @@
 package recipeWeekListMenu;
 
-import menus.MenuModel;
+import menuCommons.MenuModel;
 import recipe.RecipeWeek;
 import recipeWeekMenu.RecipeWeekMenu;
 
@@ -25,10 +25,10 @@ public class RecipeWeekListMenuModel implements MenuModel {
 
         if (usersRecipeWeekMap.containsKey(selectedOption)) {
             RecipeWeek recipeWeek = usersRecipeWeekMap.get(selectedOption);
+
             new RecipeWeekMenu(recipeWeek);
         } else {
             throw new NullPointerException();
         }
-
     }
 }

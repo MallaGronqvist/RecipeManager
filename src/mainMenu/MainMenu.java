@@ -1,6 +1,6 @@
 package mainMenu;
 
-import menus.MenuController;
+import menuCommons.MenuController;
 
 public class MainMenu {
 

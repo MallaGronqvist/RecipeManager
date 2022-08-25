@@ -1,6 +1,6 @@
 package RecipeMenu;
 
-import menus.MenuView;
+import menuCommons.MenuView;
 import printers.MenuPrinter;
 
 import java.util.List;

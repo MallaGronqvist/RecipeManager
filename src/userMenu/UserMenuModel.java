@@ -1,7 +1,6 @@
 package userMenu;
 
-import menus.MenuModel;
-import printers.MenuPrinter;
+import menuCommons.MenuModel;
 import userRoles.User;
 
 import java.util.List;

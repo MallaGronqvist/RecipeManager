@@ -9,7 +9,9 @@ public class RecipeCreator {
     public static Recipe enterRecipe() {
         Recipe recipe = new Recipe();
         addTitle(recipe);
+        MenuPrinter.clearConsole();
         addIngredients(recipe);
+        MenuPrinter.clearConsole();
         addSteps(recipe);
         return recipe;
     }

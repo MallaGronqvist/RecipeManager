@@ -1,17 +1,17 @@
-package recipeEditor;
+package recipeEditorMenu;
 
-import menus.MenuModel;
+import menuCommons.MenuModel;
 import recipe.Recipe;
 import recipe.RecipeCreator;
-import recipeEditor.ElementDeleter.ElementDeleter;
+import recipeEditorMenu.ElementDeleter.ElementDeleter;
 
 import java.util.List;
 
-public class RecipeEditorModel implements MenuModel {
+public class RecipeEditorMenuModel implements MenuModel {
     List<String>options = List.of("delete a step", "delete an ingredient", "add a step", "add an ingredient");
     Recipe recipe;
 
-    public RecipeEditorModel(Recipe recipe) {
+    public RecipeEditorMenuModel(Recipe recipe) {
         this.recipe = recipe;
     }
 

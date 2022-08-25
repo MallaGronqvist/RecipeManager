@@ -1,14 +1,14 @@
-package recipeEditor;
+package recipeEditorMenu;
 
-import menus.MenuView;
+import menuCommons.MenuView;
 import printers.MenuPrinter;
 import printers.RecipePrinter;
 import recipe.Recipe;
 
 import java.util.List;
 
-public class RecipeEditorView extends MenuView {
-    public RecipeEditorView(Recipe recipe, List<String>options) {
+public class RecipeEditorMenuView extends MenuView {
+    public RecipeEditorMenuView(Recipe recipe, List<String>options) {
         MenuPrinter.clearConsole();
         System.out.println("Editing recipe:");
         System.out.println();
@@ -16,6 +16,6 @@ public class RecipeEditorView extends MenuView {
         System.out.println();
         System.out.println("Available operations:");
         MenuPrinter.listOptions(options);
-        super.requestUserInput();
+        requestUserInput();
     }
 }

@@ -1,4 +1,4 @@
-package menus;
+package menuCommons;
 
 import java.util.List;
 

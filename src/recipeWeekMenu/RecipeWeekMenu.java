@@ -1,13 +1,15 @@
 package recipeWeekMenu;
 
+import menuCommons.MenuController;
 import recipe.RecipeWeek;
 
 public class RecipeWeekMenu {
 
     public RecipeWeekMenu(RecipeWeek recipeWeek) {
+
         RecipeWeekMenuModel model = new RecipeWeekMenuModel(recipeWeek);
         RecipeWeekMenuView view = new RecipeWeekMenuView(model.getRecipeWeek());
-        RecipeWeekMenuController controller = new RecipeWeekMenuController(model, view);
+        MenuController controller = new MenuController(model, view);
 
         controller.readUserInput();
     }

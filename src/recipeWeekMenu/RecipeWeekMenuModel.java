@@ -1,16 +1,14 @@
 package recipeWeekMenu;
 
-import menus.MenuModel;
+import menuCommons.MenuModel;
 import printers.RecipePrinter;
 import recipe.Recipe;
 import recipe.RecipeWeek;
 
 import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.temporal.WeekFields;
-import java.util.Locale;
+import java.util.List;
 
-public class RecipeWeekMenuModel {
+public class RecipeWeekMenuModel implements MenuModel {
 
     RecipeWeek recipeWeek;
 
@@ -18,34 +16,31 @@ public class RecipeWeekMenuModel {
         this.recipeWeek = recipeWeek;
     }
 
-    // Change this to int
-    public void processOption(String input) {
-        Recipe requestedRecipe = new Recipe();
-
-        switch (input){
-            case "t" -> requestedRecipe = recipeWeek.getRecipeByDay(LocalDate.now().getDayOfWeek());
-            case "1" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.MONDAY);
-            case "2" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.TUESDAY);
-            case "3" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.WEDNESDAY);
-            case "4" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.THURSDAY);
-            case "5" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.FRIDAY);
-            case "6" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SATURDAY);
-            case "7" -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SUNDAY);
-            default -> throw new IndexOutOfBoundsException();
-        }
-
-        RecipePrinter.printRecipe(requestedRecipe);
-    }
 
     public RecipeWeek getRecipeWeek() {
         return recipeWeek;
     }
-    
-    public boolean isCurrentRecipeWeek(){
-        LocalDate today = LocalDate.now();
 
-        int currentWeekOfYear = today.get(WeekFields.of(Locale.GERMANY).weekOfYear());
-        
-        return recipeWeek.getWeekNumber() == currentWeekOfYear;
+    // This is here only for the sake of implementing MenuModel -interface.
+    @Override
+    public List<String> getMenuOptions() {
+        return null;
+    }
+
+    public void processOption(int input) {
+        Recipe requestedRecipe;
+
+        switch (input) {
+            case 1 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.MONDAY);
+            case 2 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.TUESDAY);
+            case 3 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.WEDNESDAY);
+            case 4 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.THURSDAY);
+            case 5 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.FRIDAY);
+            case 6 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SATURDAY);
+            case 7 -> requestedRecipe = recipeWeek.getRecipeByDay(DayOfWeek.SUNDAY);
+            default -> throw new IndexOutOfBoundsException();
+        }
+
+        RecipePrinter.printRecipe(requestedRecipe);
     }
 }

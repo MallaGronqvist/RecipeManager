@@ -1,7 +1,7 @@
 package userRoles;
 
+import fileHandlers.RecipePoolFileHandler;
 import mainMenu.MainMenu;
-import recipe.RecipeFileHandler;
 import recipe.RecipePool;
 
 public abstract class Person {
@@ -20,7 +20,7 @@ public abstract class Person {
     }
 
     public void signOut() {
-        RecipeFileHandler.saveToFile(recipePool);
+        RecipePoolFileHandler.saveToFile(recipePool);
 
         new MainMenu();
     }
