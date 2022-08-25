@@ -1,0 +1,16 @@
+32
+Vietnamese Noodles:0.4 kg noodles;1.0 pc carrot;0.01 l oyster sauce;1.0 pc pak choi:cut the vegetables;boil all ingredients;add oyster sauce:1
+Aloo Gobi:1.0 kg potatoes;0.01 kg spices;0.5 kg cauliflower;0.7 kg tomato:cut the vegetables into cubes;boil them;fry spices in oil;add cubed tomatoes;add boiled vegetables:1
+Chickpea Wrap:4.0 pc wrap;0.6 kg chickpeas;2.0 pc avocado;0.05 kg cilantro;1.0 pc tomato;1.0 pc capsicum:cut the vegetables;mix vegetables with cilantro and chickpeas;roll the mixture into wraps:1
+Greek Salad:1.0 pc feta;0.01 kg salad;0.25 pc onion;0.05 kg olives:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
+Danish smorrebrod:1.0 pc bread;0.01 kg butter;1.0 pc cheese slice;7.0 pc cucumber slice:spread butter on bread;put cheese slice and cucumbers on top:1
+Tuna salad:1.0 pc canned tuna;0.01 kg salad;0.25 pc onion;0.05 kg pickles:Cut the vegetables.;Mix the ingredients.;Serve with salt and olive oil.:1
+Moussaka:3.0 pc zucchini;0.8 l polpa di pomodoro;1.0 pc onion;0.2 kg cheese:slice the zucchini;cut onion into cubes;fry onion in a pan and add polpa;place layers of the ingredients in an oven pan;cook in the oven for 30 mins:1
+33
+Turkish kofte:1.0 kg meat;1.0 pc onion;0.1 l parsley; 1.0 pc garlic clove:Mix all ingredients in a kitchen machine;Form kofte;Fry in oil:1
+Bulgur with lentils:5.0 kg bulgur;5.0 kg lentils;1 kg onion:boil bulgur and lentils;fry onion;mix all ingredients:1
+Crepes:0.4 kg flour;0.4 l milk;0.001 kg salt;0.02 l oil:mix the ingredients in a bowl;fry crepes in a pan with some oil;serve with some filling:1
+Pizza:1.0 l flour;0.007 kg yeast;0.4 l water;0.005 kg salt:prepare the pizza dough;let it rest over night in the fridge;top with some nice toppings;bake in 250 degrees for 12 mins:1
+Aubergine with parsley:1.0 pc aubergine;0.07 l olive oil;0.001 kg salt;0.1 l parsley;1.0 pc tomato:bake the aubergine in the oven for an hour;mix cubed tomatoes with chopped parsley, salt and olive oil;cut the aubergine in half and pour mixture on top:1
+Pasta al Pesto:0.4 kg pasta;0.2 l pesto:boil the pasta in salted water;mix with pesto:1
+Omelette:0.1 kg cheese;5.0 pc egg;0.3 kg tomato:shake all ingredients;mix properly;bake in oven for 10 mins:1
