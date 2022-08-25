@@ -54,7 +54,7 @@ public class RecipeWeekFileHandler {
                 lines.add(line);
             }
 
-        } catch (IOException | IndexOutOfBoundsException e) {
+        } catch (IOException e) {
             System.out.println("Recipe weeks could not be loaded from file.");
             usersRecipeWeekMap = new HashMap<>();
         }
