@@ -1,6 +1,6 @@
 package userRoles;
 
-import RecipeMenu.RecipeMenu;
+import recipeMenu.RecipeMenu;
 import fileHandlers.RecipePoolFileHandler;
 import fileHandlers.RecipeWeekFileHandler;
 import mainMenu.MainMenu;
@@ -60,9 +60,7 @@ public class User extends Person {
         }
     }
 
-    public void viewRecipeList() {
-        new RecipeMenu(recipePool, "view");
-    }
+ //   public void viewRecipeList() { new RecipeMenu(recipePool, "view"); }
 
     public void viewTodaysRecipe() {
         LocalDate today = LocalDate.now();

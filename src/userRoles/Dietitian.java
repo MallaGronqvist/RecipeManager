@@ -1,6 +1,6 @@
 package userRoles;
 
-import RecipeMenu.RecipeMenu;
+import recipeMenu.RecipeMenu;
 import dietitianMenu.DietitianMenu;
 import printers.RecipePrinter;
 import recipe.Recipe;
@@ -30,9 +30,7 @@ public class Dietitian extends Person {
         RecipePrinter.waitForEnter();
     }
 
-    public void viewRecipeList() {
-        new RecipeMenu(recipePool, "view");
-    }
+ //   public void viewRecipeList() { new RecipeMenu(recipePool, "view"); }
 
     public void editRecipe() {
         new RecipeMenu(recipePool, "edit");

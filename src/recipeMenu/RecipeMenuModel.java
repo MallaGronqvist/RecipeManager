@@ -1,4 +1,4 @@
-package RecipeMenu;
+package recipeMenu;
 
 import menuCommons.MenuModel;
 import printers.RecipePrinter;

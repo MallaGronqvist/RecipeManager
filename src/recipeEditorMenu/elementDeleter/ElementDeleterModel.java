@@ -1,4 +1,4 @@
-package recipeEditorMenu.ElementDeleter;
+package recipeEditorMenu.elementDeleter;
 
 import menuCommons.MenuModel;
 import printers.RecipePrinter;

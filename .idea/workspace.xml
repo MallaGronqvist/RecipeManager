@@ -10,7 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Did some more refactoring and continued work on program persistence -feature.">
-      <change beforePath="$PROJECT_DIR$/src/fileHandlers/RecipeWeekFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileHandlers/RecipeWeekFileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project organisation/UML class diagram 1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project organisation/UML class diagram 2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project organisation/Use case diagram.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Dietitian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userRoles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Malla/IdeaProjects/RecipeManager/Project organisation",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="addRecipeMenu" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Malla\IdeaProjects\RecipeManager\Project organisation" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Malla\IdeaProjects\RecipeManager\Project organisation" />
       <recent name="C:\Users\Malla\IdeaProjects\RecipeManager\assets" />
     </key>
   </component>
@@ -208,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661420391997</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Did some more refactoring and continued work on program persistence -feature.">
+      <created>1661420553688</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1661420553688</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

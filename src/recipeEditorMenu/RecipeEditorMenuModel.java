@@ -3,7 +3,7 @@ package recipeEditorMenu;
 import menuCommons.MenuModel;
 import recipe.Recipe;
 import recipe.RecipeCreator;
-import recipeEditorMenu.ElementDeleter.ElementDeleter;
+import recipeEditorMenu.elementDeleter.ElementDeleter;
 
 import java.util.List;
 
