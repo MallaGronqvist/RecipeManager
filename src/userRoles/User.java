@@ -1,6 +1,5 @@
 package userRoles;
 
-import recipeMenu.RecipeMenu;
 import fileHandlers.RecipePoolFileHandler;
 import fileHandlers.RecipeWeekFileHandler;
 import mainMenu.MainMenu;
@@ -54,13 +53,10 @@ public class User extends Person {
 
                 new RecipeWeekMenu(recipeWeek);
             } catch (IndexOutOfBoundsException e) {
-
                 System.out.println("Recipe week can't be generated at the moment.");
             }
         }
     }
-
- //   public void viewRecipeList() { new RecipeMenu(recipePool, "view"); }
 
     public void viewTodaysRecipe() {
         LocalDate today = LocalDate.now();
@@ -72,7 +68,6 @@ public class User extends Person {
             todaysRecipe = usersRecipeWeekMap.get(currentWeek).getRecipeByDay(dayOfWeek);
 
             RecipePrinter.printRecipe(todaysRecipe);
-
         } catch (NullPointerException e) {
             MenuPrinter.clearConsole();
             System.out.println("No recipe for today was found in your recipe weeks.");
@@ -83,7 +78,6 @@ public class User extends Person {
     @Override
     public void signOut() {
         RecipePoolFileHandler.saveToFile(recipePool);
-
         RecipeWeekFileHandler.saveUsersRecipeWeeks(usersRecipeWeekMap);
 
         new MainMenu();

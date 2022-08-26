@@ -16,10 +16,6 @@ public abstract class Person {
 
     public abstract void sessionLoop();
 
-    public RecipePool getRecipePool() {
-        return recipePool;
-    }
-
     public void viewRecipeList() {
         new RecipeMenu(recipePool, "view");
     }

@@ -26,9 +26,9 @@ public class MenuPrinter {
     }
 
     private static void clearConsoleUnix() {
-        String clearScreenASCIICode = "\033[H\033[2J";
+        String clearConsoleASCIICode = "\033[H\033[2J";
 
-        System.out.print(clearScreenASCIICode);
+        System.out.print(clearConsoleASCIICode);
         System.out.flush();
     }
 

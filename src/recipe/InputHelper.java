@@ -1,4 +1,5 @@
 // A class with some helper methods for getting input from the user.
+// This class is used by the RecipeCreator.
 
 package recipe;
 

@@ -16,8 +16,8 @@ public class ElementDeleterModel implements MenuModel {
         this.recipe = recipe;
         this.elementType = elementType;
 
-        switch (elementType){
-            case "step"-> this.elements = new ArrayList<>(recipe.getSteps());
+        switch (elementType) {
+            case "step" -> this.elements = new ArrayList<>(recipe.getSteps());
             case "ingredient" -> this.elements = new ArrayList<>(recipe.getIngredients());
         }
     }
@@ -29,10 +29,10 @@ public class ElementDeleterModel implements MenuModel {
 
     @Override
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
-        if (selectedOption != 0){
-            elements.remove(selectedOption-1);
+        if (selectedOption != 0) {
+            elements.remove(selectedOption - 1);
 
-            switch (elementType){
+            switch (elementType) {
                 case "step" -> recipe.setSteps(elements);
                 case "ingredient" -> recipe.setIngredients(elements);
                 default -> throw new IndexOutOfBoundsException();

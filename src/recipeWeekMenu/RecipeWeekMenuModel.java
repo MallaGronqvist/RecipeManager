@@ -21,7 +21,7 @@ public class RecipeWeekMenuModel implements MenuModel {
         return recipeWeek;
     }
 
-    // This is here only for the sake of implementing MenuModel -interface.
+    // This is here only for the sake of implementing the MenuModel -interface.
     @Override
     public List<String> getMenuOptions() {
         return null;

@@ -8,7 +8,7 @@ import recipeEditorMenu.elementDeleter.ElementDeleter;
 import java.util.List;
 
 public class RecipeEditorMenuModel implements MenuModel {
-    List<String>options = List.of("delete a step", "delete an ingredient", "add a step", "add an ingredient");
+    List<String> options = List.of("delete a step", "delete an ingredient", "add a step", "add an ingredient");
     Recipe recipe;
 
     public RecipeEditorMenuModel(Recipe recipe) {
@@ -26,7 +26,7 @@ public class RecipeEditorMenuModel implements MenuModel {
 
     @Override
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
-        switch (selectedOption){
+        switch (selectedOption) {
             case 1 -> new ElementDeleter(recipe, "step");
             case 2 -> new ElementDeleter(recipe, "ingredient");
             case 3 -> RecipeCreator.addSteps(recipe);

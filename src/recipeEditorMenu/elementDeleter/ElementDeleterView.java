@@ -8,9 +8,12 @@ import java.util.List;
 public class ElementDeleterView extends MenuView {
     public ElementDeleterView(List<String> elements) {
         MenuPrinter.clearConsole();
+
         System.out.println("Options for deleting:");
         System.out.println();
+
         MenuPrinter.listOptions(elements);
+
         requestUserInput();
     }
 

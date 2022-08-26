@@ -35,9 +35,11 @@ public class Recipe {
     public String ingredientsToString() {
         StringBuilder ingredientsString = new StringBuilder();
 
+        // Append a ';' as a delimiter between the ingredients.
         for (String ingredient : ingredients) {
             ingredientsString.append(ingredient).append(";");
         }
+        // Get rid of the last instance of ';'.
         ingredientsString = new StringBuilder(ingredientsString.substring(0, ingredientsString.length() - 1));
         return ingredientsString.toString();
     }
@@ -45,9 +47,11 @@ public class Recipe {
     public String stepsToString() {
         StringBuilder stepsString = new StringBuilder();
 
+        // Append a ';' as a delimiter between the steps.
         for (String step : steps) {
             stepsString.append(step).append(";");
         }
+        // Get rid of the last instance of ';'.
         stepsString = new StringBuilder(stepsString.substring(0, stepsString.length() - 1));
         return stepsString.toString();
     }

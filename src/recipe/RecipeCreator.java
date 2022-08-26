@@ -74,7 +74,6 @@ public class RecipeCreator {
             System.out.println("Invalid option. Try again.");
             return requestMeasurementType();
         }
-
         return chosenMeasurement;
     }
 
@@ -95,7 +94,6 @@ public class RecipeCreator {
 
             return requestQuantity();
         }
-
         return quantity;
     }
 }

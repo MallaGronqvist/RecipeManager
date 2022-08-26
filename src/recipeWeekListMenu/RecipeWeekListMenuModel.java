@@ -17,7 +17,9 @@ public class RecipeWeekListMenuModel implements MenuModel {
 
     @Override
     public List<String> getMenuOptions() {
-        List<String> weekNumbers = usersRecipeWeekMap.keySet().stream().map(Object::toString).collect(Collectors.toList());
+        List<String> weekNumbers = usersRecipeWeekMap.keySet().stream()
+                .map(Object::toString).collect(Collectors.toList());
+
         return weekNumbers;
     }
 

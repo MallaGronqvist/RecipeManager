@@ -9,19 +9,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Did some more refactoring and continued work on program persistence -feature.">
-      <change afterPath="$PROJECT_DIR$/Project organisation/UML class diagram 1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project organisation/UML class diagram 2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project organisation/Use case diagram.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="1de286e0-c08e-4b38-a04f-d12c41e71c01" name="Changes" comment="Added project documentation in the 'Project organisation' directory. Added a readme. Did some minor refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeMenu/RecipeMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeMenu/RecipeMenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/ElementDeleter/ElementDeleterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printers/MenuPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printers/MenuPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/InputHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/InputHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe/RecipeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/RecipeEditorMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeEditorMenu/elementDeleter/ElementDeleterView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeWeekListMenu/RecipeWeekListMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekListMenu/RecipeWeekListMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipeWeekMenu/RecipeWeekMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/Dietitian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Dietitian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userRoles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userRoles/User.java" afterDir="false" />
@@ -234,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661420553688</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added project documentation in the 'Project organisation' directory. Added a readme. Did some minor refactoring.">
+      <created>1661515319562</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1661515319562</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +273,8 @@
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Did some refactoring and worked on program persistence -feature." />
     <MESSAGE value="Did some more refactoring and continued work on program persistence -feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some more refactoring and continued work on program persistence -feature." />
+    <MESSAGE value="Added project documentation in the 'Project organisation' directory. Added a readme. Did some minor refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added project documentation in the 'Project organisation' directory. Added a readme. Did some minor refactoring." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RecipeManager$Main.ic" NAME="Main Coverage Results" MODIFIED="1661155342408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
